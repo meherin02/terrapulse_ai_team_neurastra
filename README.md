@@ -19,27 +19,38 @@ The project addresses **Be An Earth System Trend Detective!** through four quest
 - Annual CSV downloads and a text export of the findings.
 - An Earth illustration with subtle pointer and scroll parallax, pause controls, and a Simple view option. If the image cannot load, the original header appears automatically. System reduced-motion preferences disable animation.
 
-This is a working prototype with one location and one variable. TerraAgent includes prepared explanations and an optional live chat integration using OpenAI's Responses API and read-only evidence tools. Additional regions and environmental variables are planned improvements. Live AI needs a locally configured API key; without it, the guided explanations remain usable.
+This is a working prototype with one location and one variable. TerraAgent includes prepared explanations and an optional live chat integration using Google Gemini's API and read-only evidence tools. Additional regions and environmental variables are planned improvements. Live AI needs a locally configured API key; without it, the guided explanations remain usable.
 
 ## Try the optional live TerraAgent
 
-This integration is experimental. The tool loop has been checked with a simulated provider; a real OpenAI response requires an API key and API access.
+This integration is experimental. The tool loop has been checked with a simulated provider and one real Gemini 3.5 Flash-Lite question about the 2001–2024 Dhaka trend. The live answer matched the saved slope, interval, and p-value and identified the nonsignificant result. This is a smoke check, not a guarantee that every generated answer is correct. Live access requires a locally configured Gemini key and available quota.
 
 1. Copy `.env.example` to `.env` in the project root.
-2. Enter your own `OPENAI_API_KEY` in `.env`. Do not put it in React, chat messages, screenshots, or Git. The file is ignored by Git.
+2. Enter your own `GEMINI_API_KEY` in `.env`. Do not put it in React, chat messages, screenshots, or Git. The file is ignored by Git.
 3. In one terminal, run `npm run server`. Restart this server after changing `.env`.
 4. In a second terminal, run `npm run dev`.
 5. Open the explorer and scroll to **Ask TerraAgent**. Click **Check connection**, then ask a question.
 
-The default model is `gpt-5-mini`; `OPENAI_MODEL` can be changed to an accessible model supporting Responses API function calling. API usage can incur charges. The backend requires no additional npm dependencies and uses Node.js 24's HTTP server and fetch API.
+The default model is `gemini-3.5-flash-lite`; `GEMINI_MODEL` can be changed to an accessible Gemini model supporting function calling. Use a Free Tier project without enabling paid billing; free usage is quota-limited. If quota is exhausted, the guided explanations remain available. The backend requires no additional npm dependencies and uses Node.js 24's HTTP server and fetch API.
 
 The agent has three tools: `get_temperature_trend`, `compare_periods`, and `get_data_source`. They read the saved NASA dataset, validate supported periods, and return existing calculations. The model receives the tool outputs and explains them; it does not calculate new slopes or fetch live observations. The first model request requires a tool call. Chat answers show which tools were used and a source link. Instructions constrain scope, but generated answers can still contain mistakes and must be checked.
 
-Recent chat history is kept in browser memory and sent with the question and tool evidence to OpenAI when live AI is configured. It is cleared on page reload. No database stores the chat. The backend requests `store: false`. See [function calling documentation](https://developers.openai.com/api/docs/guides/function-calling).
+Recent chat history is kept in browser memory and sent with the question and tool evidence to Google Gemini when live AI is configured. It is cleared on page reload. No database stores the chat. Free-tier content may be used by Google to improve its products. The app sends questions and public NASA evidence, not team emails. See [Gemini function calling](https://ai.google.dev/gemini-api/docs/function-calling) and [free-tier pricing and data use](https://ai.google.dev/gemini-api/docs/pricing).
 
 Run `npm run test:agent` to check exact tool values, unsupported inputs, simulated tool round trips, bounded loops, HTTP validation, origin checks, and missing-key handling. These tests make no paid AI requests. The dashboard build is checked with `npm run build`.
 
-The backend listens on `127.0.0.1:3001`, with Vite proxying `/api` during development and local preview. The current server is intended for a local trial. Hosting the live chat requires deploying a backend and setting its environment variables; uploading only `dist/` will keep the charts and guided explanations, but will not provide live chat. Before public hosting, configure authentication, appropriate allowed origins, and durable per-user rate limits. The local prototype has a small request and concurrency limit.
+The local backend listens on `127.0.0.1:3001`, with Vite proxying `/api` during development and local preview. Vercel uses the same request handler through `api/chat.js` and `api/agent/status.js`. `vercel.json` includes the saved NASA dataset in the function bundle and sets a 60-second execution limit. The Gemini request loop has a 55-second overall deadline. The handler supports both raw HTTP request bodies and Vercel's parsed bodies, and accepts the same hosted origin as well as the local UI.
+
+## Deploy on Vercel
+
+1. Import the GitHub repository into Vercel with the Vite preset, repository root directory, build command `npm run build`, and output directory `dist`.
+2. In **Project Settings → Environment Variables**, add `GEMINI_API_KEY` with your private Gemini key and `GEMINI_MODEL` with `gemini-3.5-flash-lite`. Select **Production**, and **Preview** if you want AI in preview deployments. Do not use a `VITE_` prefix for the key.
+3. Redeploy after saving the variables. Your local `.env` is ignored by Git and is not automatically transferred to Vercel.
+4. Open `/api/agent/status` on your deployed domain. It should return `configured: true` and the model name; it never exposes the key. Then test **Ask TerraAgent**.
+
+Deploy the repository, not only the `dist/` folder: the hosted chat needs the `api/` functions. Do not rewrite `/api/*` to `index.html`. Same-domain API calls need no separate server URL.
+
+This remains a prototype. Request and concurrency limits are per function instance, not durable per-user quotas across Vercel's scaling. For broader public use, add authentication and a shared rate limiter. Free Gemini quota can still run out; the guided explanations remain available. Your account's Vercel and Gemini plan limits apply independently.
 
 ## Run the website
 
@@ -120,11 +131,13 @@ The five calculation checks cover calendar weighting, exclusion of incomplete ye
 terrapulse-ai/
   src/                  React dashboard and styling
   server/               Optional live AI backend, evidence tools, and checks
+  api/                  Vercel entry points for live chat and status
   public/               Earth illustration, favicon, and prepared data
   scripts/              Python preprocessing, checks, and requirements
   data/raw/             Original NASA response and source receipt
   index.html
   vite.config.js
+  vercel.json
   package.json
   package-lock.json
   .gitignore

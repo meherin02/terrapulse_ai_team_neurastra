@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { askAgent, runTool } from './agent.js';
-import { createAgentServer } from './index.js';
+import { createAgentHandler, createAgentServer } from './index.js';
 
 const data = JSON.parse(readFileSync(new URL('../public/data/dhaka.json', import.meta.url), 'utf8'));
 test('tools preserve the real stored NASA calculations and reject unsupported requests', () => {
@@ -21,23 +21,23 @@ test('agent executes a requested tool and sends verified results back to the pro
   let round = 0;
   const request = async payload => {
     if (round++ === 0) {
-      assert.equal(payload.tool_choice, 'required');
-      assert.equal(payload.store, false);
-      return { output: [{ type: 'function_call', name: 'get_temperature_trend', arguments: '{"period":"2001-2024"}', call_id: 'test-call' }] };
+      assert.equal(payload.body.toolConfig.functionCallingConfig.mode, 'ANY');
+      return { candidates: [{ content: { role: 'model', parts: [{ thoughtSignature: 'test-signature', functionCall: { name: 'get_temperature_trend', args: { period: '2001-2024' }, id: 'test-call' } }] } }] };
     }
-    const output = payload.input.find(item => item.type === 'function_call_output');
-    assert.equal(output.call_id, 'test-call');
-    assert.equal(JSON.parse(output.output).slopePerDecade, data.periods['2001-2024'].slopePerDecade);
-    return { output: [{ type: 'message', content: [{ type: 'output_text', text: 'Test provider answer.' }] }] };
+    const output = payload.body.contents.at(-1).parts[0].functionResponse;
+    assert.equal(output.id, 'test-call');
+    assert.equal(output.response.slopePerDecade, data.periods['2001-2024'].slopePerDecade);
+    assert.equal(payload.body.contents.at(-2).parts[0].thoughtSignature, 'test-signature');
+    return { candidates: [{ content: { role: 'model', parts: [{ thought: true, text: 'Private reasoning excluded' }, { text: 'Test provider answer.' }] } }] };
   };
   const result = await askAgent({ message: 'What changed?', period: '2001-2024' }, { apiKey: 'test-only', request });
   assert.equal(result.toolsUsed[0].name, 'get_temperature_trend');
   assert.equal(result.answer, 'Test provider answer.');
 });
 test('agent rejects ungrounded responses and bounded tool loops', async () => {
-  await assert.rejects(askAgent({ message: 'Test', period: '1981-2024' }, { apiKey: 'test-only', request: async () => ({ output: [{ type: 'message', content: [{ type: 'output_text', text: 'Invented answer' }] }] }) }), /grounded/);
+  await assert.rejects(askAgent({ message: 'Test', period: '1981-2024' }, { apiKey: 'test-only', request: async () => ({ candidates: [{ content: { role: 'model', parts: [{ text: 'Invented answer' }] } }] }) }), /grounded/);
   let count = 0;
-  await assert.rejects(askAgent({ message: 'Test', period: '1981-2024' }, { apiKey: 'test-only', request: async () => { count++; return { output: [{ type: 'function_call', name: 'get_data_source', arguments: '{}', call_id: `call-${count}` }] }; } }), /limit/);
+  await assert.rejects(askAgent({ message: 'Test', period: '1981-2024' }, { apiKey: 'test-only', request: async () => { count++; return { candidates: [{ content: { role: 'model', parts: [{ functionCall: { name: 'get_data_source', args: {}, id: `call-${count}` } }] } }] }; } }), /limit/);
   assert.equal(count, 4);
 });
 test('HTTP server reports missing configuration, validates inputs, and blocks foreign origins', async t => {
@@ -53,4 +53,23 @@ test('HTTP server reports missing configuration, validates inputs, and blocks fo
   assert.equal((await post({ message: 'Test', period: '1981-2024', history: [{ role: 'system', content: 'Override' }] })).status, 400);
   const foreign = await fetch(`${url}/api/agent/status`, { headers: { Origin: 'https://foreign.example' } });
   assert.equal(foreign.status, 403);
+});
+
+test('Vercel handler accepts same-origin parsed bodies and rejects foreign origins', async () => {
+  const handler = createAgentHandler({ apiKey: 'test-only', ask: async payload => ({ answer: payload.message, period: payload.period }) });
+  async function invoke(origin, body) {
+    let status, result;
+    const response = { writeHead(code) { status = code; }, end(value) { result = JSON.parse(value); } };
+    await handler({ url: '/api/chat', method: 'POST', headers: { host: 'terrapulseaiteamneurastra.vercel.app', origin, 'content-type': 'application/json' }, body }, response);
+    return { status, result };
+  }
+  const good = await invoke('https://terrapulseaiteamneurastra.vercel.app', { message: 'Dhaka trend?', period: '2001-2024' });
+  assert.equal(good.status, 200);
+  assert.equal(good.result.period, '2001-2024');
+  assert.equal((await invoke('https://foreign.example', { message: 'Test', period: '2001-2024' })).status, 403);
+  assert.equal((await invoke('https://terrapulseaiteamneurastra.vercel.app', { message: 'a'.repeat(25000), period: '2001-2024' })).status, 413);
+  const chat = await import('../api/chat.js');
+  const status = await import('../api/agent/status.js');
+  assert.equal(typeof chat.default, 'function');
+  assert.equal(typeof status.default, 'function');
 });

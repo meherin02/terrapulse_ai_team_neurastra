@@ -66,6 +66,6 @@ export default function LiveChat({ period }) {
     <div className="chat-suggestions">{suggestions.map(text => <button key={text} disabled={busy} onClick={() => setQuestion(text)}>{text}</button>)}</div>
     <form className="chat-form" onSubmit={send}><label htmlFor="terra-question">Your question</label><div className="chat-input-row"><textarea id="terra-question" value={question} onChange={event => setQuestion(event.target.value)} placeholder="Ask about Dhaka’s temperature trends…" maxLength={2000} rows={2} disabled={busy}/><button className="button" type="submit" disabled={busy || !question.trim()}><Send size={16}/>{busy ? 'Working…' : 'Ask'}</button></div></form>
     {error && <p className="chat-error" role="alert">{error}</p>}
-    <div className="chat-bottom"><p>When live AI is configured, your question, recent chat, and NASA evidence are sent to OpenAI. AI answers can contain mistakes; verify them against the chart and methodology.</p>{messages.length > 0 && <button className="text-button" disabled={busy} onClick={() => {setMessages([]); setError('');}}><Trash2 size={13}/>Clear chat</button>}</div>
+    <div className="chat-bottom"><p>When live AI is configured, your question, recent chat, and NASA evidence are sent to Google Gemini. AI answers can contain mistakes; verify them against the chart and methodology.</p>{messages.length > 0 && <button className="text-button" disabled={busy} onClick={() => {setMessages([]); setError('');}}><Trash2 size={13}/>Clear chat</button>}</div>
   </section>;
 }
