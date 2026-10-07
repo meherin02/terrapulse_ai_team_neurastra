@@ -1,0 +1,5 @@
+{
+  "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&longitude=90.4125&latitude=23.8103&start=1981&end=2024&format=JSON",
+  "retrievedAt": "2026-10-05T16:30:52.830064+00:00",
+  "sha256": "2deb403419eaf41a2774f38ccb4f890a3f01797b8bbc692336ead501099bfc43"
+}
