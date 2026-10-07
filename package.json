@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "server": "node --env-file-if-exists=.env server/index.js",
+    "test:agent": "node --test server/agent.test.js",
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"

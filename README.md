@@ -19,7 +19,27 @@ The project addresses **Be An Earth System Trend Detective!** through four quest
 - Annual CSV downloads and a text export of the findings.
 - An Earth illustration with subtle pointer and scroll parallax, pause controls, and a Simple view option. If the image cannot load, the original header appears automatically. System reduced-motion preferences disable animation.
 
-This is a working prototype with one location and one variable. TerraAgent currently uses prepared explanations based on the computed results. A live language-model agent, additional regions, and other environmental variables are planned improvements.
+This is a working prototype with one location and one variable. TerraAgent includes prepared explanations and an optional live chat integration using OpenAI's Responses API and read-only evidence tools. Additional regions and environmental variables are planned improvements. Live AI needs a locally configured API key; without it, the guided explanations remain usable.
+
+## Try the optional live TerraAgent
+
+This integration is experimental. The tool loop has been checked with a simulated provider; a real OpenAI response requires an API key and API access.
+
+1. Copy `.env.example` to `.env` in the project root.
+2. Enter your own `OPENAI_API_KEY` in `.env`. Do not put it in React, chat messages, screenshots, or Git. The file is ignored by Git.
+3. In one terminal, run `npm run server`. Restart this server after changing `.env`.
+4. In a second terminal, run `npm run dev`.
+5. Open the explorer and scroll to **Ask TerraAgent**. Click **Check connection**, then ask a question.
+
+The default model is `gpt-5-mini`; `OPENAI_MODEL` can be changed to an accessible model supporting Responses API function calling. API usage can incur charges. The backend requires no additional npm dependencies and uses Node.js 24's HTTP server and fetch API.
+
+The agent has three tools: `get_temperature_trend`, `compare_periods`, and `get_data_source`. They read the saved NASA dataset, validate supported periods, and return existing calculations. The model receives the tool outputs and explains them; it does not calculate new slopes or fetch live observations. The first model request requires a tool call. Chat answers show which tools were used and a source link. Instructions constrain scope, but generated answers can still contain mistakes and must be checked.
+
+Recent chat history is kept in browser memory and sent with the question and tool evidence to OpenAI when live AI is configured. It is cleared on page reload. No database stores the chat. The backend requests `store: false`. See [function calling documentation](https://developers.openai.com/api/docs/guides/function-calling).
+
+Run `npm run test:agent` to check exact tool values, unsupported inputs, simulated tool round trips, bounded loops, HTTP validation, origin checks, and missing-key handling. These tests make no paid AI requests. The dashboard build is checked with `npm run build`.
+
+The backend listens on `127.0.0.1:3001`, with Vite proxying `/api` during development and local preview. The current server is intended for a local trial. Hosting the live chat requires deploying a backend and setting its environment variables; uploading only `dist/` will keep the charts and guided explanations, but will not provide live chat. Before public hosting, configure authentication, appropriate allowed origins, and durable per-user rate limits. The local prototype has a small request and concurrency limit.
 
 ## Run the website
 
@@ -99,6 +119,7 @@ The five calculation checks cover calendar weighting, exclusion of incomplete ye
 ```text
 terrapulse-ai/
   src/                  React dashboard and styling
+  server/               Optional live AI backend, evidence tools, and checks
   public/               Earth illustration, favicon, and prepared data
   scripts/              Python preprocessing, checks, and requirements
   data/raw/             Original NASA response and source receipt
@@ -107,6 +128,7 @@ terrapulse-ai/
   package.json
   package-lock.json
   .gitignore
+  .env.example
   LICENSE
   README.md
 ```
