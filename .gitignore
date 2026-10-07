@@ -1,0 +1,17 @@
+node_modules/
+.vite-cache/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+artifacts/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Local reference material and superseded preview
+docs/shared-guide.txt
+docs/dashboard-preview.jpg
