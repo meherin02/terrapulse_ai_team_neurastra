@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Activity, ArrowDownRight, ArrowUpRight, Check, ChevronDown, Download, ExternalLink, Globe2, Info, Layers, MapPin, Menu, MessageSquare, Microscope, Pause, Play, RefreshCw, ShieldCheck, Thermometer, X } from 'lucide-react';
+import { Activity, ArrowDownRight, ArrowUpRight, Check, ChevronDown, Download, ExternalLink, Globe2, Info, Layers, Mail, MapPin, Menu, MessageSquare, Microscope, Pause, Play, RefreshCw, ShieldCheck, Thermometer, Users, X } from 'lucide-react';
 import { Area, CartesianGrid, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import './styles.css';
 
@@ -122,6 +122,24 @@ function ExplorerIntro({ onExport }) {
   </section>;
 }
 
+const teamMembers = [
+  { name: 'Meherin Jahan', email: 'meherjan0201@gmail.com', role: 'Frontend and backend developer', initials: 'MJ' },
+  { name: 'Meherun Nessa Shanta', email: 'meherakteronline@gmail.com', role: 'UI/UX', initials: 'MS' },
+  { name: 'Sabekun Nahar Mim', email: 'sabekunnaharmim6347@gmail.com', role: 'AI expert and video editor', initials: 'SM' },
+  { name: 'Sanjida Ahmed', email: 'sanjida.saba4343@gmail.com', role: 'App tester', initials: 'SA' }
+];
+
+function TeamIntroduction() {
+  return <section className="team-introduction" aria-label="Team Neurastra members">
+    <div className="team-summary"><span className="team-symbol"><Users size={28}/></span><div><p className="eyebrow">TEAM NEURASTRA</p><h2>Four people. One shared curiosity.</h2><p>We bring together development, design, AI, video editing, and testing to build TerraPulse AI for the Earth System Trend Detective challenge.</p></div></div>
+    <div className="member-grid">{teamMembers.map((member, index) => <article className="panel member-card" key={member.email}>
+      <div className="member-top"><span className="member-avatar" aria-hidden="true">{member.initials}</span><span className="member-number">MEMBER 0{index + 1}</span></div>
+      <h2>{member.name}</h2><p className="member-role">{member.role}</p>
+      <a className="member-email" href={`mailto:${member.email}`}><Mail size={16}/><span>{member.email}</span></a>
+    </article>)}</div>
+  </section>;
+}
+
 function App() {
   const [data, setData] = useState(null), [error, setError] = useState('');
   const [periodKey, setPeriodKey] = useState('1981-2024'), [view, setView] = useState('annual');
@@ -158,15 +176,16 @@ function App() {
       <nav aria-label="Main navigation">
         <button className={tab === 'explore' ? 'active' : ''} onClick={() => {setTab('explore'); setMenu(false);}}><Globe2 size={19}/>Trend explorer</button>
         <button className={tab === 'method' ? 'active' : ''} onClick={() => {setTab('method'); setMenu(false);}}><Microscope size={19}/>Data & methodology</button>
+        <button className={tab === 'team' ? 'active' : ''} onClick={() => {setTab('team'); setMenu(false);}}><Users size={19}/>Team introduction</button>
       </nav>
       <div className="sidebar-note"><Layers size={21}/><strong>One place. A longer view.</strong><p>Investigate change with evidence you can trace.</p><span>1981 — 2024</span></div>
       <div className="team"><span className="avatar">N</span><div><strong>Team Neurastra</strong><small>Space Apps · prototype</small></div></div>
     </aside>
     {menu && <button className="backdrop" aria-label="Close navigation" onClick={() => setMenu(false)}/>}
     <div className="main-shell">
-      <header className="topbar"><button className="mobile-menu icon-btn" aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>{menu ? <X/> : <Menu/>}</button><div className="breadcrumb">Workspace <span>/</span> <strong>{tab === 'explore' ? 'Trend explorer' : 'Data & methodology'}</strong></div><span className="snapshot"><span/>Verified NASA data snapshot</span></header>
+      <header className="topbar"><button className="mobile-menu icon-btn" aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>{menu ? <X/> : <Menu/>}</button><div className="breadcrumb">Workspace <span>/</span> <strong>{tab === 'explore' ? 'Trend explorer' : tab === 'team' ? 'Team introduction' : 'Data & methodology'}</strong></div><span className="snapshot"><span/>Verified NASA data snapshot</span></header>
       <main>
-        {tab === 'explore' ? <ExplorerIntro onExport={exportReport}/> : <div className="page-heading"><div><p className="eyebrow">BE AN EARTH SYSTEM TREND DETECTIVE</p><h1>Follow the evidence.</h1><p className="subtitle">A transparent path from NASA data to an interpretable result.</p></div></div>}
+        {tab === 'explore' ? <ExplorerIntro onExport={exportReport}/> : <div className="page-heading"><div><p className="eyebrow">BE AN EARTH SYSTEM TREND DETECTIVE</p><h1>{tab === 'team' ? 'Meet the team.' : 'Follow the evidence.'}</h1><p className="subtitle">{tab === 'team' ? 'The people behind TerraPulse AI.' : 'A transparent path from NASA data to an interpretable result.'}</p></div></div>}
 
         {tab === 'explore' && <>
           <section className="controls" aria-label="Analysis settings"><div className="control"><MapPin size={18}/><div><span>LOCATION</span><strong>Dhaka, Bangladesh</strong></div><span className="tiny-tag">Study region</span></div><div className="control"><Thermometer size={18}/><div><span>VARIABLE</span><strong>2-meter air temperature</strong></div></div><label className="control period"><div><span>ANALYSIS PERIOD</span><select value={periodKey} onChange={e => {setPeriodKey(e.target.value); setAnswer('trend');}} aria-label="Analysis period"><option value="1981-2024">1981 – 2024 · full record</option><option value="2001-2024">2001 – 2024 · recent decades</option><option value="2015-2024">2015 – 2024 · short record</option></select></div><ChevronDown size={16}/></label></section>
@@ -193,6 +212,8 @@ function App() {
         {tab === 'method' && <div className="method-grid"><section className="panel prose"><h2>01 / The source</h2><p>NASA POWER provides <strong>T2M: air temperature at 2 meters</strong>, derived here from the MERRA-2 reanalysis model. These are regional model estimates informed by observations, not a direct satellite surface-temperature record.</p><dl><dt>Requested location</dt><dd>23.8103° N, 90.4125° E</dd><dt>Spatial resolution</dt><dd>{data.source.resolution}</dd><dt>Record</dt><dd>January 1981 – December 2024</dd><dt>Valid monthly values</dt><dd>{data.quality.validMonths} / {data.quality.expectedMonths}</dd><dt>Retrieved</dt><dd>{new Date(data.source.retrievedAt).toLocaleDateString('en-GB', {timeZone:'UTC'})} UTC</dd></dl><div className="source-links"><a href={data.source.url} target="_blank" rel="noreferrer">Exact NASA API request<ExternalLink size={14}/></a><a href={data.source.documentation} target="_blank" rel="noreferrer">Monthly API documentation<ExternalLink size={14}/></a><a href={data.source.resolutionDocumentation} target="_blank" rel="noreferrer">Resolution and data FAQ<ExternalLink size={14}/></a><a href="/data/dhaka.json" download>Download prepared dataset<Download size={14}/></a></div></section>
           <section className="panel prose"><h2>02 / From data to a trend</h2><ol><li>Validate the monthly values and exclude the fill value. Do not treat NASA’s month 13 summary as an extra month.</li><li>Weight each monthly mean by the number of calendar days. Keep years with all 12 months; do not interpolate gaps.</li><li>Fit an ordinary least-squares line to annual means. Report its slope in °C per decade.</li><li>Estimate covariance using Newey–West HAC with one annual lag, Bartlett weights, and n/(n−2) correction.</li><li>Use an approximate t distribution with n−2 degrees of freedom for a two-sided p-value and 95% interval.</li></ol><p>The green band is uncertainty in the fitted <strong>mean trend</strong>, not a prediction interval for individual years. The p-value and interval are exploratory and depend on the method’s assumptions.</p><a href="https://www.statsmodels.org/stable/generated/statsmodels.stats.sandwich_covariance.cov_hac.html" target="_blank" rel="noreferrer">HAC method reference<ExternalLink size={14}/></a></section>
           <section className="panel prose limitations"><h2>03 / What this cannot tell us</h2><ul>{data.limitations.map(text => <li key={text}>{text}</li>)}</ul><p>Periods are fixed in advance in this prototype. Compare all three rather than selecting a period only because its result is significant. No correction is made for comparing multiple periods.</p><p>A local cooling estimate is not evidence against global warming. Regional variability, changes in assimilated observations, and possible breaks in a reanalysis series need further investigation. We have not established a cause for this result.</p><p>TerraAgent currently uses deterministic explanations of the computed results. A live LLM, more locations, and satellite land surface temperature are future work.</p><a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noreferrer">Locator boundaries: Natural Earth, public domain<ExternalLink size={14}/></a></section></div>}
+
+        {tab === 'team' && <TeamIntroduction/>}
 
         <footer><span>TerraPulse AI <span className="footer-dot">/</span> Team Neurastra</span><span>NASA data. Transparent methods. Clearer understanding.</span></footer>
       </main>

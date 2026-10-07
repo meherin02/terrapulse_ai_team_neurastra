@@ -12,6 +12,25 @@
 @media(max-width:760px){.sidebar{visibility:hidden}.sidebar.open{visibility:visible}.control strong{white-space:normal;display:block}}
 
 /* A decorative image layer moves independently of the readable intro. */
+.team-introduction{margin-bottom:32px}
+.team-summary{display:flex;gap:20px;align-items:flex-start;padding:28px;background:#edf3e6;border:1px solid #dfe8d3;border-radius:12px;margin-bottom:24px}
+.team-symbol{display:grid;place-items:center;width:56px;height:56px;flex-shrink:0;border-radius:14px;background:#dceac9;color:#3b674a}
+.team-summary h2{font-size:24px;line-height:1.4;margin:7px 0 10px;color:#17372e}
+.team-summary p:last-child{font-size:14px;line-height:1.8;color:#66765e;max-width:670px}
+.member-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.member-card{padding:28px;min-width:0}
+.member-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;gap:12px}
+.member-avatar{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;font-family:'Manrope',sans-serif;font-weight:700;font-size:17px;background:#e3edd8;color:#355736}
+.member-card:nth-child(2) .member-avatar{background:#dfede9;color:#2b6659}
+.member-card:nth-child(3) .member-avatar{background:#eee8dc;color:#7c6540}
+.member-card:nth-child(4) .member-avatar{background:#e8e7ef;color:#66607d}
+.member-number{font-size:10px;letter-spacing:1.6px;color:#85917e}
+.member-card h2{font-size:21px;line-height:1.4;color:#17372e}
+.member-role{font-size:13px;color:#74816b;margin-top:7px;min-height:40px}
+.member-email{display:flex;gap:9px;align-items:center;border-top:1px solid var(--border);padding-top:18px;margin-top:20px;font-size:13px}
+.member-email span{overflow-wrap:anywhere;min-width:0}
+.member-email:hover span{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.member-grid{grid-template-columns:1fr;gap:16px}.member-card{padding:23px}.team-summary{padding:22px;gap:14px}.team-symbol{width:40px;height:40px;border-radius:10px}.team-summary h2{font-size:21px}.team-summary .eyebrow{font-size:9px}.member-card h2{font-size:20px}}
 .explorer-intro{position:relative;isolation:isolate;--pointer-x:0px;--pointer-y:0px;--scroll-y:0px}
 .intro-image,.intro-shade{position:absolute;pointer-events:none;opacity:0;z-index:-1}
 .intro-image{inset:-48px;width:calc(100% + 96px);height:calc(100% + 96px);object-fit:cover;object-position:center 60%;transform:translate3d(var(--pointer-x),calc(var(--pointer-y) + var(--scroll-y)),0);transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .3s}

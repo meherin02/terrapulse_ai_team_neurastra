@@ -15,6 +15,7 @@ The project addresses **Be An Earth System Trend Detective!** through four quest
 - Trend estimates in °C per decade, approximate 95% confidence intervals, and p-values.
 - A regional locator, source links, and an explanation of the analysis method.
 - Guided TerraAgent explanations of the calculated results.
+- A Team introduction page with member roles and email contacts.
 - Annual CSV downloads and a text export of the findings.
 - An Earth illustration with subtle pointer and scroll parallax, pause controls, and a Simple view option. If the image cannot load, the original header appears automatically. System reduced-motion preferences disable animation.
 
