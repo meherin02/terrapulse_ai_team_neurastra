@@ -1,0 +1,4153 @@
+{
+  "location": {
+    "name": "Dhaka",
+    "country": "Bangladesh",
+    "latitude": 23.8103,
+    "longitude": 90.4125
+  },
+  "source": {
+    "name": "NASA POWER",
+    "model": "MERRA-2",
+    "parameter": "T2M",
+    "variable": "Air temperature at 2 meters",
+    "units": "°C",
+    "resolution": "0.5° latitude × 0.625° longitude",
+    "documentation": "https://power.larc.nasa.gov/docs/services/api/temporal/monthly/",
+    "resolutionDocumentation": "https://power.larc.nasa.gov/docs/faqs/data/",
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Monthly and Annual",
+      "api": {
+        "version": "v2.10.0",
+        "name": "POWER Monthly and Annual API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "LST",
+      "start": "19810101",
+      "end": "20241231"
+    },
+    "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&longitude=90.4125&latitude=23.8103&start=1981&end=2024&format=JSON",
+    "retrievedAt": "2026-10-05T16:30:52.830064+00:00",
+    "sha256": "2deb403419eaf41a2774f38ccb4f890a3f01797b8bbc692336ead501099bfc43"
+  },
+  "quality": {
+    "validMonths": 528,
+    "expectedMonths": 528,
+    "excludedYears": []
+  },
+  "annual": [
+    {
+      "year": 1981,
+      "temperature": 25.729096
+    },
+    {
+      "year": 1982,
+      "temperature": 25.855507
+    },
+    {
+      "year": 1983,
+      "temperature": 26.350712
+    },
+    {
+      "year": 1984,
+      "temperature": 25.776175
+    },
+    {
+      "year": 1985,
+      "temperature": 26.417507
+    },
+    {
+      "year": 1986,
+      "temperature": 26.159753
+    },
+    {
+      "year": 1987,
+      "temperature": 26.399205
+    },
+    {
+      "year": 1988,
+      "temperature": 26.538743
+    },
+    {
+      "year": 1989,
+      "temperature": 26.461507
+    },
+    {
+      "year": 1990,
+      "temperature": 26.512438
+    },
+    {
+      "year": 1991,
+      "temperature": 26.529863
+    },
+    {
+      "year": 1992,
+      "temperature": 26.753443
+    },
+    {
+      "year": 1993,
+      "temperature": 26.259726
+    },
+    {
+      "year": 1994,
+      "temperature": 26.899589
+    },
+    {
+      "year": 1995,
+      "temperature": 26.51011
+    },
+    {
+      "year": 1996,
+      "temperature": 26.636612
+    },
+    {
+      "year": 1997,
+      "temperature": 25.658219
+    },
+    {
+      "year": 1998,
+      "temperature": 25.544438
+    },
+    {
+      "year": 1999,
+      "temperature": 26.003781
+    },
+    {
+      "year": 2000,
+      "temperature": 25.110902
+    },
+    {
+      "year": 2001,
+      "temperature": 25.300767
+    },
+    {
+      "year": 2002,
+      "temperature": 25.485644
+    },
+    {
+      "year": 2003,
+      "temperature": 25.290986
+    },
+    {
+      "year": 2004,
+      "temperature": 25.365574
+    },
+    {
+      "year": 2005,
+      "temperature": 25.542027
+    },
+    {
+      "year": 2006,
+      "temperature": 25.672658
+    },
+    {
+      "year": 2007,
+      "temperature": 25.068795
+    },
+    {
+      "year": 2008,
+      "temperature": 25.439454
+    },
+    {
+      "year": 2009,
+      "temperature": 25.899671
+    },
+    {
+      "year": 2010,
+      "temperature": 25.838466
+    },
+    {
+      "year": 2011,
+      "temperature": 25.516082
+    },
+    {
+      "year": 2012,
+      "temperature": 25.327377
+    },
+    {
+      "year": 2013,
+      "temperature": 25.481425
+    },
+    {
+      "year": 2014,
+      "temperature": 25.990301
+    },
+    {
+      "year": 2015,
+      "temperature": 25.820219
+    },
+    {
+      "year": 2016,
+      "temperature": 26.15612
+    },
+    {
+      "year": 2017,
+      "temperature": 25.283123
+    },
+    {
+      "year": 2018,
+      "temperature": 24.977041
+    },
+    {
+      "year": 2019,
+      "temperature": 25.605753
+    },
+    {
+      "year": 2020,
+      "temperature": 25.088087
+    },
+    {
+      "year": 2021,
+      "temperature": 25.560438
+    },
+    {
+      "year": 2022,
+      "temperature": 25.349699
+    },
+    {
+      "year": 2023,
+      "temperature": 25.825041
+    },
+    {
+      "year": 2024,
+      "temperature": 25.438033
+    }
+  ],
+  "monthly": [
+    {
+      "date": "1981-01",
+      "year": 1981,
+      "month": 1,
+      "temperature": 19.41
+    },
+    {
+      "date": "1981-02",
+      "year": 1981,
+      "month": 2,
+      "temperature": 21.86
+    },
+    {
+      "date": "1981-03",
+      "year": 1981,
+      "month": 3,
+      "temperature": 26.27
+    },
+    {
+      "date": "1981-04",
+      "year": 1981,
+      "month": 4,
+      "temperature": 27.89
+    },
+    {
+      "date": "1981-05",
+      "year": 1981,
+      "month": 5,
+      "temperature": 28.79
+    },
+    {
+      "date": "1981-06",
+      "year": 1981,
+      "month": 6,
+      "temperature": 29.37
+    },
+    {
+      "date": "1981-07",
+      "year": 1981,
+      "month": 7,
+      "temperature": 28.52
+    },
+    {
+      "date": "1981-08",
+      "year": 1981,
+      "month": 8,
+      "temperature": 28.29
+    },
+    {
+      "date": "1981-09",
+      "year": 1981,
+      "month": 9,
+      "temperature": 28.06
+    },
+    {
+      "date": "1981-10",
+      "year": 1981,
+      "month": 10,
+      "temperature": 26.56
+    },
+    {
+      "date": "1981-11",
+      "year": 1981,
+      "month": 11,
+      "temperature": 23.96
+    },
+    {
+      "date": "1981-12",
+      "year": 1981,
+      "month": 12,
+      "temperature": 19.6
+    },
+    {
+      "date": "1982-01",
+      "year": 1982,
+      "month": 1,
+      "temperature": 20.07
+    },
+    {
+      "date": "1982-02",
+      "year": 1982,
+      "month": 2,
+      "temperature": 21.79
+    },
+    {
+      "date": "1982-03",
+      "year": 1982,
+      "month": 3,
+      "temperature": 25.31
+    },
+    {
+      "date": "1982-04",
+      "year": 1982,
+      "month": 4,
+      "temperature": 28.91
+    },
+    {
+      "date": "1982-05",
+      "year": 1982,
+      "month": 5,
+      "temperature": 29.28
+    },
+    {
+      "date": "1982-06",
+      "year": 1982,
+      "month": 6,
+      "temperature": 28.65
+    },
+    {
+      "date": "1982-07",
+      "year": 1982,
+      "month": 7,
+      "temperature": 29.07
+    },
+    {
+      "date": "1982-08",
+      "year": 1982,
+      "month": 8,
+      "temperature": 27.98
+    },
+    {
+      "date": "1982-09",
+      "year": 1982,
+      "month": 9,
+      "temperature": 28.14
+    },
+    {
+      "date": "1982-10",
+      "year": 1982,
+      "month": 10,
+      "temperature": 27.37
+    },
+    {
+      "date": "1982-11",
+      "year": 1982,
+      "month": 11,
+      "temperature": 23.53
+    },
+    {
+      "date": "1982-12",
+      "year": 1982,
+      "month": 12,
+      "temperature": 19.96
+    },
+    {
+      "date": "1983-01",
+      "year": 1983,
+      "month": 1,
+      "temperature": 18.75
+    },
+    {
+      "date": "1983-02",
+      "year": 1983,
+      "month": 2,
+      "temperature": 21.91
+    },
+    {
+      "date": "1983-03",
+      "year": 1983,
+      "month": 3,
+      "temperature": 27.01
+    },
+    {
+      "date": "1983-04",
+      "year": 1983,
+      "month": 4,
+      "temperature": 30.63
+    },
+    {
+      "date": "1983-05",
+      "year": 1983,
+      "month": 5,
+      "temperature": 29.41
+    },
+    {
+      "date": "1983-06",
+      "year": 1983,
+      "month": 6,
+      "temperature": 30.91
+    },
+    {
+      "date": "1983-07",
+      "year": 1983,
+      "month": 7,
+      "temperature": 30.31
+    },
+    {
+      "date": "1983-08",
+      "year": 1983,
+      "month": 8,
+      "temperature": 28.61
+    },
+    {
+      "date": "1983-09",
+      "year": 1983,
+      "month": 9,
+      "temperature": 28.35
+    },
+    {
+      "date": "1983-10",
+      "year": 1983,
+      "month": 10,
+      "temperature": 26.63
+    },
+    {
+      "date": "1983-11",
+      "year": 1983,
+      "month": 11,
+      "temperature": 24.23
+    },
+    {
+      "date": "1983-12",
+      "year": 1983,
+      "month": 12,
+      "temperature": 19.31
+    },
+    {
+      "date": "1984-01",
+      "year": 1984,
+      "month": 1,
+      "temperature": 18.49
+    },
+    {
+      "date": "1984-02",
+      "year": 1984,
+      "month": 2,
+      "temperature": 21.3
+    },
+    {
+      "date": "1984-03",
+      "year": 1984,
+      "month": 3,
+      "temperature": 27.97
+    },
+    {
+      "date": "1984-04",
+      "year": 1984,
+      "month": 4,
+      "temperature": 32.04
+    },
+    {
+      "date": "1984-05",
+      "year": 1984,
+      "month": 5,
+      "temperature": 29.39
+    },
+    {
+      "date": "1984-06",
+      "year": 1984,
+      "month": 6,
+      "temperature": 28.65
+    },
+    {
+      "date": "1984-07",
+      "year": 1984,
+      "month": 7,
+      "temperature": 28.29
+    },
+    {
+      "date": "1984-08",
+      "year": 1984,
+      "month": 8,
+      "temperature": 28.02
+    },
+    {
+      "date": "1984-09",
+      "year": 1984,
+      "month": 9,
+      "temperature": 26.95
+    },
+    {
+      "date": "1984-10",
+      "year": 1984,
+      "month": 10,
+      "temperature": 26.25
+    },
+    {
+      "date": "1984-11",
+      "year": 1984,
+      "month": 11,
+      "temperature": 22.43
+    },
+    {
+      "date": "1984-12",
+      "year": 1984,
+      "month": 12,
+      "temperature": 19.47
+    },
+    {
+      "date": "1985-01",
+      "year": 1985,
+      "month": 1,
+      "temperature": 19.97
+    },
+    {
+      "date": "1985-02",
+      "year": 1985,
+      "month": 2,
+      "temperature": 21.86
+    },
+    {
+      "date": "1985-03",
+      "year": 1985,
+      "month": 3,
+      "temperature": 28.13
+    },
+    {
+      "date": "1985-04",
+      "year": 1985,
+      "month": 4,
+      "temperature": 30.52
+    },
+    {
+      "date": "1985-05",
+      "year": 1985,
+      "month": 5,
+      "temperature": 30.77
+    },
+    {
+      "date": "1985-06",
+      "year": 1985,
+      "month": 6,
+      "temperature": 29.16
+    },
+    {
+      "date": "1985-07",
+      "year": 1985,
+      "month": 7,
+      "temperature": 28.14
+    },
+    {
+      "date": "1985-08",
+      "year": 1985,
+      "month": 8,
+      "temperature": 28.81
+    },
+    {
+      "date": "1985-09",
+      "year": 1985,
+      "month": 9,
+      "temperature": 28.01
+    },
+    {
+      "date": "1985-10",
+      "year": 1985,
+      "month": 10,
+      "temperature": 27.46
+    },
+    {
+      "date": "1985-11",
+      "year": 1985,
+      "month": 11,
+      "temperature": 23.28
+    },
+    {
+      "date": "1985-12",
+      "year": 1985,
+      "month": 12,
+      "temperature": 20.63
+    },
+    {
+      "date": "1986-01",
+      "year": 1986,
+      "month": 1,
+      "temperature": 19.37
+    },
+    {
+      "date": "1986-02",
+      "year": 1986,
+      "month": 2,
+      "temperature": 23.05
+    },
+    {
+      "date": "1986-03",
+      "year": 1986,
+      "month": 3,
+      "temperature": 28.18
+    },
+    {
+      "date": "1986-04",
+      "year": 1986,
+      "month": 4,
+      "temperature": 30.11
+    },
+    {
+      "date": "1986-05",
+      "year": 1986,
+      "month": 5,
+      "temperature": 30.77
+    },
+    {
+      "date": "1986-06",
+      "year": 1986,
+      "month": 6,
+      "temperature": 31.72
+    },
+    {
+      "date": "1986-07",
+      "year": 1986,
+      "month": 7,
+      "temperature": 28.86
+    },
+    {
+      "date": "1986-08",
+      "year": 1986,
+      "month": 8,
+      "temperature": 28.87
+    },
+    {
+      "date": "1986-09",
+      "year": 1986,
+      "month": 9,
+      "temperature": 27.18
+    },
+    {
+      "date": "1986-10",
+      "year": 1986,
+      "month": 10,
+      "temperature": 24.84
+    },
+    {
+      "date": "1986-11",
+      "year": 1986,
+      "month": 11,
+      "temperature": 21.95
+    },
+    {
+      "date": "1986-12",
+      "year": 1986,
+      "month": 12,
+      "temperature": 18.92
+    },
+    {
+      "date": "1987-01",
+      "year": 1987,
+      "month": 1,
+      "temperature": 18.51
+    },
+    {
+      "date": "1987-02",
+      "year": 1987,
+      "month": 2,
+      "temperature": 22.7
+    },
+    {
+      "date": "1987-03",
+      "year": 1987,
+      "month": 3,
+      "temperature": 26.81
+    },
+    {
+      "date": "1987-04",
+      "year": 1987,
+      "month": 4,
+      "temperature": 29.8
+    },
+    {
+      "date": "1987-05",
+      "year": 1987,
+      "month": 5,
+      "temperature": 30.24
+    },
+    {
+      "date": "1987-06",
+      "year": 1987,
+      "month": 6,
+      "temperature": 30.17
+    },
+    {
+      "date": "1987-07",
+      "year": 1987,
+      "month": 7,
+      "temperature": 29.19
+    },
+    {
+      "date": "1987-08",
+      "year": 1987,
+      "month": 8,
+      "temperature": 28.76
+    },
+    {
+      "date": "1987-09",
+      "year": 1987,
+      "month": 9,
+      "temperature": 28.28
+    },
+    {
+      "date": "1987-10",
+      "year": 1987,
+      "month": 10,
+      "temperature": 26.69
+    },
+    {
+      "date": "1987-11",
+      "year": 1987,
+      "month": 11,
+      "temperature": 24.09
+    },
+    {
+      "date": "1987-12",
+      "year": 1987,
+      "month": 12,
+      "temperature": 21.41
+    },
+    {
+      "date": "1988-01",
+      "year": 1988,
+      "month": 1,
+      "temperature": 20.42
+    },
+    {
+      "date": "1988-02",
+      "year": 1988,
+      "month": 2,
+      "temperature": 23.27
+    },
+    {
+      "date": "1988-03",
+      "year": 1988,
+      "month": 3,
+      "temperature": 26.9
+    },
+    {
+      "date": "1988-04",
+      "year": 1988,
+      "month": 4,
+      "temperature": 30.78
+    },
+    {
+      "date": "1988-05",
+      "year": 1988,
+      "month": 5,
+      "temperature": 30.27
+    },
+    {
+      "date": "1988-06",
+      "year": 1988,
+      "month": 6,
+      "temperature": 28.86
+    },
+    {
+      "date": "1988-07",
+      "year": 1988,
+      "month": 7,
+      "temperature": 28.49
+    },
+    {
+      "date": "1988-08",
+      "year": 1988,
+      "month": 8,
+      "temperature": 28.63
+    },
+    {
+      "date": "1988-09",
+      "year": 1988,
+      "month": 9,
+      "temperature": 28.07
+    },
+    {
+      "date": "1988-10",
+      "year": 1988,
+      "month": 10,
+      "temperature": 26.94
+    },
+    {
+      "date": "1988-11",
+      "year": 1988,
+      "month": 11,
+      "temperature": 24.52
+    },
+    {
+      "date": "1988-12",
+      "year": 1988,
+      "month": 12,
+      "temperature": 21.3
+    },
+    {
+      "date": "1989-01",
+      "year": 1989,
+      "month": 1,
+      "temperature": 17.7
+    },
+    {
+      "date": "1989-02",
+      "year": 1989,
+      "month": 2,
+      "temperature": 21.78
+    },
+    {
+      "date": "1989-03",
+      "year": 1989,
+      "month": 3,
+      "temperature": 26.86
+    },
+    {
+      "date": "1989-04",
+      "year": 1989,
+      "month": 4,
+      "temperature": 30.94
+    },
+    {
+      "date": "1989-05",
+      "year": 1989,
+      "month": 5,
+      "temperature": 31.4
+    },
+    {
+      "date": "1989-06",
+      "year": 1989,
+      "month": 6,
+      "temperature": 30.24
+    },
+    {
+      "date": "1989-07",
+      "year": 1989,
+      "month": 7,
+      "temperature": 29.85
+    },
+    {
+      "date": "1989-08",
+      "year": 1989,
+      "month": 8,
+      "temperature": 29.12
+    },
+    {
+      "date": "1989-09",
+      "year": 1989,
+      "month": 9,
+      "temperature": 29.22
+    },
+    {
+      "date": "1989-10",
+      "year": 1989,
+      "month": 10,
+      "temperature": 27.29
+    },
+    {
+      "date": "1989-11",
+      "year": 1989,
+      "month": 11,
+      "temperature": 23.35
+    },
+    {
+      "date": "1989-12",
+      "year": 1989,
+      "month": 12,
+      "temperature": 19.59
+    },
+    {
+      "date": "1990-01",
+      "year": 1990,
+      "month": 1,
+      "temperature": 20.2
+    },
+    {
+      "date": "1990-02",
+      "year": 1990,
+      "month": 2,
+      "temperature": 23.34
+    },
+    {
+      "date": "1990-03",
+      "year": 1990,
+      "month": 3,
+      "temperature": 26.51
+    },
+    {
+      "date": "1990-04",
+      "year": 1990,
+      "month": 4,
+      "temperature": 29.39
+    },
+    {
+      "date": "1990-05",
+      "year": 1990,
+      "month": 5,
+      "temperature": 31.23
+    },
+    {
+      "date": "1990-06",
+      "year": 1990,
+      "month": 6,
+      "temperature": 30.27
+    },
+    {
+      "date": "1990-07",
+      "year": 1990,
+      "month": 7,
+      "temperature": 29.02
+    },
+    {
+      "date": "1990-08",
+      "year": 1990,
+      "month": 8,
+      "temperature": 28.96
+    },
+    {
+      "date": "1990-09",
+      "year": 1990,
+      "month": 9,
+      "temperature": 28.1
+    },
+    {
+      "date": "1990-10",
+      "year": 1990,
+      "month": 10,
+      "temperature": 25.87
+    },
+    {
+      "date": "1990-11",
+      "year": 1990,
+      "month": 11,
+      "temperature": 24.42
+    },
+    {
+      "date": "1990-12",
+      "year": 1990,
+      "month": 12,
+      "temperature": 20.73
+    },
+    {
+      "date": "1991-01",
+      "year": 1991,
+      "month": 1,
+      "temperature": 19.01
+    },
+    {
+      "date": "1991-02",
+      "year": 1991,
+      "month": 2,
+      "temperature": 24.45
+    },
+    {
+      "date": "1991-03",
+      "year": 1991,
+      "month": 3,
+      "temperature": 29.47
+    },
+    {
+      "date": "1991-04",
+      "year": 1991,
+      "month": 4,
+      "temperature": 32.1
+    },
+    {
+      "date": "1991-05",
+      "year": 1991,
+      "month": 5,
+      "temperature": 30.41
+    },
+    {
+      "date": "1991-06",
+      "year": 1991,
+      "month": 6,
+      "temperature": 29.58
+    },
+    {
+      "date": "1991-07",
+      "year": 1991,
+      "month": 7,
+      "temperature": 29.94
+    },
+    {
+      "date": "1991-08",
+      "year": 1991,
+      "month": 8,
+      "temperature": 29.4
+    },
+    {
+      "date": "1991-09",
+      "year": 1991,
+      "month": 9,
+      "temperature": 27.66
+    },
+    {
+      "date": "1991-10",
+      "year": 1991,
+      "month": 10,
+      "temperature": 25.93
+    },
+    {
+      "date": "1991-11",
+      "year": 1991,
+      "month": 11,
+      "temperature": 21.52
+    },
+    {
+      "date": "1991-12",
+      "year": 1991,
+      "month": 12,
+      "temperature": 18.84
+    },
+    {
+      "date": "1992-01",
+      "year": 1992,
+      "month": 1,
+      "temperature": 18.24
+    },
+    {
+      "date": "1992-02",
+      "year": 1992,
+      "month": 2,
+      "temperature": 20.67
+    },
+    {
+      "date": "1992-03",
+      "year": 1992,
+      "month": 3,
+      "temperature": 27.24
+    },
+    {
+      "date": "1992-04",
+      "year": 1992,
+      "month": 4,
+      "temperature": 31.54
+    },
+    {
+      "date": "1992-05",
+      "year": 1992,
+      "month": 5,
+      "temperature": 31.28
+    },
+    {
+      "date": "1992-06",
+      "year": 1992,
+      "month": 6,
+      "temperature": 31.83
+    },
+    {
+      "date": "1992-07",
+      "year": 1992,
+      "month": 7,
+      "temperature": 29.4
+    },
+    {
+      "date": "1992-08",
+      "year": 1992,
+      "month": 8,
+      "temperature": 29.29
+    },
+    {
+      "date": "1992-09",
+      "year": 1992,
+      "month": 9,
+      "temperature": 29.14
+    },
+    {
+      "date": "1992-10",
+      "year": 1992,
+      "month": 10,
+      "temperature": 27.93
+    },
+    {
+      "date": "1992-11",
+      "year": 1992,
+      "month": 11,
+      "temperature": 24.46
+    },
+    {
+      "date": "1992-12",
+      "year": 1992,
+      "month": 12,
+      "temperature": 19.95
+    },
+    {
+      "date": "1993-01",
+      "year": 1993,
+      "month": 1,
+      "temperature": 19.28
+    },
+    {
+      "date": "1993-02",
+      "year": 1993,
+      "month": 2,
+      "temperature": 23.67
+    },
+    {
+      "date": "1993-03",
+      "year": 1993,
+      "month": 3,
+      "temperature": 26.33
+    },
+    {
+      "date": "1993-04",
+      "year": 1993,
+      "month": 4,
+      "temperature": 29.99
+    },
+    {
+      "date": "1993-05",
+      "year": 1993,
+      "month": 5,
+      "temperature": 28.82
+    },
+    {
+      "date": "1993-06",
+      "year": 1993,
+      "month": 6,
+      "temperature": 28.95
+    },
+    {
+      "date": "1993-07",
+      "year": 1993,
+      "month": 7,
+      "temperature": 28.7
+    },
+    {
+      "date": "1993-08",
+      "year": 1993,
+      "month": 8,
+      "temperature": 28.41
+    },
+    {
+      "date": "1993-09",
+      "year": 1993,
+      "month": 9,
+      "temperature": 27.71
+    },
+    {
+      "date": "1993-10",
+      "year": 1993,
+      "month": 10,
+      "temperature": 27.33
+    },
+    {
+      "date": "1993-11",
+      "year": 1993,
+      "month": 11,
+      "temperature": 24.4
+    },
+    {
+      "date": "1993-12",
+      "year": 1993,
+      "month": 12,
+      "temperature": 21.47
+    },
+    {
+      "date": "1994-01",
+      "year": 1994,
+      "month": 1,
+      "temperature": 20.21
+    },
+    {
+      "date": "1994-02",
+      "year": 1994,
+      "month": 2,
+      "temperature": 21.5
+    },
+    {
+      "date": "1994-03",
+      "year": 1994,
+      "month": 3,
+      "temperature": 27.85
+    },
+    {
+      "date": "1994-04",
+      "year": 1994,
+      "month": 4,
+      "temperature": 30.37
+    },
+    {
+      "date": "1994-05",
+      "year": 1994,
+      "month": 5,
+      "temperature": 31.78
+    },
+    {
+      "date": "1994-06",
+      "year": 1994,
+      "month": 6,
+      "temperature": 30.24
+    },
+    {
+      "date": "1994-07",
+      "year": 1994,
+      "month": 7,
+      "temperature": 29.05
+    },
+    {
+      "date": "1994-08",
+      "year": 1994,
+      "month": 8,
+      "temperature": 29.07
+    },
+    {
+      "date": "1994-09",
+      "year": 1994,
+      "month": 9,
+      "temperature": 28.95
+    },
+    {
+      "date": "1994-10",
+      "year": 1994,
+      "month": 10,
+      "temperature": 27.86
+    },
+    {
+      "date": "1994-11",
+      "year": 1994,
+      "month": 11,
+      "temperature": 25.09
+    },
+    {
+      "date": "1994-12",
+      "year": 1994,
+      "month": 12,
+      "temperature": 20.53
+    },
+    {
+      "date": "1995-01",
+      "year": 1995,
+      "month": 1,
+      "temperature": 18.93
+    },
+    {
+      "date": "1995-02",
+      "year": 1995,
+      "month": 2,
+      "temperature": 22.95
+    },
+    {
+      "date": "1995-03",
+      "year": 1995,
+      "month": 3,
+      "temperature": 27.8
+    },
+    {
+      "date": "1995-04",
+      "year": 1995,
+      "month": 4,
+      "temperature": 31.69
+    },
+    {
+      "date": "1995-05",
+      "year": 1995,
+      "month": 5,
+      "temperature": 31.68
+    },
+    {
+      "date": "1995-06",
+      "year": 1995,
+      "month": 6,
+      "temperature": 29.55
+    },
+    {
+      "date": "1995-07",
+      "year": 1995,
+      "month": 7,
+      "temperature": 28.73
+    },
+    {
+      "date": "1995-08",
+      "year": 1995,
+      "month": 8,
+      "temperature": 28.38
+    },
+    {
+      "date": "1995-09",
+      "year": 1995,
+      "month": 9,
+      "temperature": 27.46
+    },
+    {
+      "date": "1995-10",
+      "year": 1995,
+      "month": 10,
+      "temperature": 26.97
+    },
+    {
+      "date": "1995-11",
+      "year": 1995,
+      "month": 11,
+      "temperature": 23.64
+    },
+    {
+      "date": "1995-12",
+      "year": 1995,
+      "month": 12,
+      "temperature": 20.2
+    },
+    {
+      "date": "1996-01",
+      "year": 1996,
+      "month": 1,
+      "temperature": 19.23
+    },
+    {
+      "date": "1996-02",
+      "year": 1996,
+      "month": 2,
+      "temperature": 23.04
+    },
+    {
+      "date": "1996-03",
+      "year": 1996,
+      "month": 3,
+      "temperature": 28.41
+    },
+    {
+      "date": "1996-04",
+      "year": 1996,
+      "month": 4,
+      "temperature": 30.56
+    },
+    {
+      "date": "1996-05",
+      "year": 1996,
+      "month": 5,
+      "temperature": 31.02
+    },
+    {
+      "date": "1996-06",
+      "year": 1996,
+      "month": 6,
+      "temperature": 29.72
+    },
+    {
+      "date": "1996-07",
+      "year": 1996,
+      "month": 7,
+      "temperature": 29.15
+    },
+    {
+      "date": "1996-08",
+      "year": 1996,
+      "month": 8,
+      "temperature": 28.2
+    },
+    {
+      "date": "1996-09",
+      "year": 1996,
+      "month": 9,
+      "temperature": 29.04
+    },
+    {
+      "date": "1996-10",
+      "year": 1996,
+      "month": 10,
+      "temperature": 26.87
+    },
+    {
+      "date": "1996-11",
+      "year": 1996,
+      "month": 11,
+      "temperature": 24.13
+    },
+    {
+      "date": "1996-12",
+      "year": 1996,
+      "month": 12,
+      "temperature": 20.26
+    },
+    {
+      "date": "1997-01",
+      "year": 1997,
+      "month": 1,
+      "temperature": 18.89
+    },
+    {
+      "date": "1997-02",
+      "year": 1997,
+      "month": 2,
+      "temperature": 21.71
+    },
+    {
+      "date": "1997-03",
+      "year": 1997,
+      "month": 3,
+      "temperature": 28.18
+    },
+    {
+      "date": "1997-04",
+      "year": 1997,
+      "month": 4,
+      "temperature": 28.07
+    },
+    {
+      "date": "1997-05",
+      "year": 1997,
+      "month": 5,
+      "temperature": 30.63
+    },
+    {
+      "date": "1997-06",
+      "year": 1997,
+      "month": 6,
+      "temperature": 29.08
+    },
+    {
+      "date": "1997-07",
+      "year": 1997,
+      "month": 7,
+      "temperature": 28.22
+    },
+    {
+      "date": "1997-08",
+      "year": 1997,
+      "month": 8,
+      "temperature": 27.99
+    },
+    {
+      "date": "1997-09",
+      "year": 1997,
+      "month": 9,
+      "temperature": 27.02
+    },
+    {
+      "date": "1997-10",
+      "year": 1997,
+      "month": 10,
+      "temperature": 25.17
+    },
+    {
+      "date": "1997-11",
+      "year": 1997,
+      "month": 11,
+      "temperature": 23.84
+    },
+    {
+      "date": "1997-12",
+      "year": 1997,
+      "month": 12,
+      "temperature": 18.89
+    },
+    {
+      "date": "1998-01",
+      "year": 1998,
+      "month": 1,
+      "temperature": 17.53
+    },
+    {
+      "date": "1998-02",
+      "year": 1998,
+      "month": 2,
+      "temperature": 22.07
+    },
+    {
+      "date": "1998-03",
+      "year": 1998,
+      "month": 3,
+      "temperature": 24.94
+    },
+    {
+      "date": "1998-04",
+      "year": 1998,
+      "month": 4,
+      "temperature": 28.88
+    },
+    {
+      "date": "1998-05",
+      "year": 1998,
+      "month": 5,
+      "temperature": 29.67
+    },
+    {
+      "date": "1998-06",
+      "year": 1998,
+      "month": 6,
+      "temperature": 28.95
+    },
+    {
+      "date": "1998-07",
+      "year": 1998,
+      "month": 7,
+      "temperature": 28.54
+    },
+    {
+      "date": "1998-08",
+      "year": 1998,
+      "month": 8,
+      "temperature": 28.23
+    },
+    {
+      "date": "1998-09",
+      "year": 1998,
+      "month": 9,
+      "temperature": 27.94
+    },
+    {
+      "date": "1998-10",
+      "year": 1998,
+      "month": 10,
+      "temperature": 26.95
+    },
+    {
+      "date": "1998-11",
+      "year": 1998,
+      "month": 11,
+      "temperature": 23.63
+    },
+    {
+      "date": "1998-12",
+      "year": 1998,
+      "month": 12,
+      "temperature": 19.1
+    },
+    {
+      "date": "1999-01",
+      "year": 1999,
+      "month": 1,
+      "temperature": 18.02
+    },
+    {
+      "date": "1999-02",
+      "year": 1999,
+      "month": 2,
+      "temperature": 23.32
+    },
+    {
+      "date": "1999-03",
+      "year": 1999,
+      "month": 3,
+      "temperature": 27.71
+    },
+    {
+      "date": "1999-04",
+      "year": 1999,
+      "month": 4,
+      "temperature": 33.16
+    },
+    {
+      "date": "1999-05",
+      "year": 1999,
+      "month": 5,
+      "temperature": 29.96
+    },
+    {
+      "date": "1999-06",
+      "year": 1999,
+      "month": 6,
+      "temperature": 29.15
+    },
+    {
+      "date": "1999-07",
+      "year": 1999,
+      "month": 7,
+      "temperature": 28.08
+    },
+    {
+      "date": "1999-08",
+      "year": 1999,
+      "month": 8,
+      "temperature": 27.82
+    },
+    {
+      "date": "1999-09",
+      "year": 1999,
+      "month": 9,
+      "temperature": 27.15
+    },
+    {
+      "date": "1999-10",
+      "year": 1999,
+      "month": 10,
+      "temperature": 26.22
+    },
+    {
+      "date": "1999-11",
+      "year": 1999,
+      "month": 11,
+      "temperature": 21.82
+    },
+    {
+      "date": "1999-12",
+      "year": 1999,
+      "month": 12,
+      "temperature": 19.61
+    },
+    {
+      "date": "2000-01",
+      "year": 2000,
+      "month": 1,
+      "temperature": 18.36
+    },
+    {
+      "date": "2000-02",
+      "year": 2000,
+      "month": 2,
+      "temperature": 20.21
+    },
+    {
+      "date": "2000-03",
+      "year": 2000,
+      "month": 3,
+      "temperature": 25.43
+    },
+    {
+      "date": "2000-04",
+      "year": 2000,
+      "month": 4,
+      "temperature": 29.62
+    },
+    {
+      "date": "2000-05",
+      "year": 2000,
+      "month": 5,
+      "temperature": 28.68
+    },
+    {
+      "date": "2000-06",
+      "year": 2000,
+      "month": 6,
+      "temperature": 28.35
+    },
+    {
+      "date": "2000-07",
+      "year": 2000,
+      "month": 7,
+      "temperature": 28.33
+    },
+    {
+      "date": "2000-08",
+      "year": 2000,
+      "month": 8,
+      "temperature": 28.1
+    },
+    {
+      "date": "2000-09",
+      "year": 2000,
+      "month": 9,
+      "temperature": 27.1
+    },
+    {
+      "date": "2000-10",
+      "year": 2000,
+      "month": 10,
+      "temperature": 26.53
+    },
+    {
+      "date": "2000-11",
+      "year": 2000,
+      "month": 11,
+      "temperature": 22.36
+    },
+    {
+      "date": "2000-12",
+      "year": 2000,
+      "month": 12,
+      "temperature": 18.17
+    },
+    {
+      "date": "2001-01",
+      "year": 2001,
+      "month": 1,
+      "temperature": 16.39
+    },
+    {
+      "date": "2001-02",
+      "year": 2001,
+      "month": 2,
+      "temperature": 21.75
+    },
+    {
+      "date": "2001-03",
+      "year": 2001,
+      "month": 3,
+      "temperature": 26.57
+    },
+    {
+      "date": "2001-04",
+      "year": 2001,
+      "month": 4,
+      "temperature": 30.85
+    },
+    {
+      "date": "2001-05",
+      "year": 2001,
+      "month": 5,
+      "temperature": 28.76
+    },
+    {
+      "date": "2001-06",
+      "year": 2001,
+      "month": 6,
+      "temperature": 27.95
+    },
+    {
+      "date": "2001-07",
+      "year": 2001,
+      "month": 7,
+      "temperature": 28.08
+    },
+    {
+      "date": "2001-08",
+      "year": 2001,
+      "month": 8,
+      "temperature": 28.32
+    },
+    {
+      "date": "2001-09",
+      "year": 2001,
+      "month": 9,
+      "temperature": 27.94
+    },
+    {
+      "date": "2001-10",
+      "year": 2001,
+      "month": 10,
+      "temperature": 26.46
+    },
+    {
+      "date": "2001-11",
+      "year": 2001,
+      "month": 11,
+      "temperature": 22.66
+    },
+    {
+      "date": "2001-12",
+      "year": 2001,
+      "month": 12,
+      "temperature": 17.8
+    },
+    {
+      "date": "2002-01",
+      "year": 2002,
+      "month": 1,
+      "temperature": 18.63
+    },
+    {
+      "date": "2002-02",
+      "year": 2002,
+      "month": 2,
+      "temperature": 21.7
+    },
+    {
+      "date": "2002-03",
+      "year": 2002,
+      "month": 3,
+      "temperature": 26.89
+    },
+    {
+      "date": "2002-04",
+      "year": 2002,
+      "month": 4,
+      "temperature": 29.48
+    },
+    {
+      "date": "2002-05",
+      "year": 2002,
+      "month": 5,
+      "temperature": 29.92
+    },
+    {
+      "date": "2002-06",
+      "year": 2002,
+      "month": 6,
+      "temperature": 28.48
+    },
+    {
+      "date": "2002-07",
+      "year": 2002,
+      "month": 7,
+      "temperature": 28.52
+    },
+    {
+      "date": "2002-08",
+      "year": 2002,
+      "month": 8,
+      "temperature": 27.7
+    },
+    {
+      "date": "2002-09",
+      "year": 2002,
+      "month": 9,
+      "temperature": 27.29
+    },
+    {
+      "date": "2002-10",
+      "year": 2002,
+      "month": 10,
+      "temperature": 25.63
+    },
+    {
+      "date": "2002-11",
+      "year": 2002,
+      "month": 11,
+      "temperature": 22.54
+    },
+    {
+      "date": "2002-12",
+      "year": 2002,
+      "month": 12,
+      "temperature": 18.87
+    },
+    {
+      "date": "2003-01",
+      "year": 2003,
+      "month": 1,
+      "temperature": 16.2
+    },
+    {
+      "date": "2003-02",
+      "year": 2003,
+      "month": 2,
+      "temperature": 21.35
+    },
+    {
+      "date": "2003-03",
+      "year": 2003,
+      "month": 3,
+      "temperature": 25.01
+    },
+    {
+      "date": "2003-04",
+      "year": 2003,
+      "month": 4,
+      "temperature": 29.74
+    },
+    {
+      "date": "2003-05",
+      "year": 2003,
+      "month": 5,
+      "temperature": 30.6
+    },
+    {
+      "date": "2003-06",
+      "year": 2003,
+      "month": 6,
+      "temperature": 28.8
+    },
+    {
+      "date": "2003-07",
+      "year": 2003,
+      "month": 7,
+      "temperature": 28.43
+    },
+    {
+      "date": "2003-08",
+      "year": 2003,
+      "month": 8,
+      "temperature": 28.62
+    },
+    {
+      "date": "2003-09",
+      "year": 2003,
+      "month": 9,
+      "temperature": 27.74
+    },
+    {
+      "date": "2003-10",
+      "year": 2003,
+      "month": 10,
+      "temperature": 26.4
+    },
+    {
+      "date": "2003-11",
+      "year": 2003,
+      "month": 11,
+      "temperature": 21.69
+    },
+    {
+      "date": "2003-12",
+      "year": 2003,
+      "month": 12,
+      "temperature": 18.75
+    },
+    {
+      "date": "2004-01",
+      "year": 2004,
+      "month": 1,
+      "temperature": 17.68
+    },
+    {
+      "date": "2004-02",
+      "year": 2004,
+      "month": 2,
+      "temperature": 21.02
+    },
+    {
+      "date": "2004-03",
+      "year": 2004,
+      "month": 3,
+      "temperature": 27.56
+    },
+    {
+      "date": "2004-04",
+      "year": 2004,
+      "month": 4,
+      "temperature": 29.18
+    },
+    {
+      "date": "2004-05",
+      "year": 2004,
+      "month": 5,
+      "temperature": 30.63
+    },
+    {
+      "date": "2004-06",
+      "year": 2004,
+      "month": 6,
+      "temperature": 29.1
+    },
+    {
+      "date": "2004-07",
+      "year": 2004,
+      "month": 7,
+      "temperature": 27.94
+    },
+    {
+      "date": "2004-08",
+      "year": 2004,
+      "month": 8,
+      "temperature": 28.12
+    },
+    {
+      "date": "2004-09",
+      "year": 2004,
+      "month": 9,
+      "temperature": 27.02
+    },
+    {
+      "date": "2004-10",
+      "year": 2004,
+      "month": 10,
+      "temperature": 25.0
+    },
+    {
+      "date": "2004-11",
+      "year": 2004,
+      "month": 11,
+      "temperature": 21.54
+    },
+    {
+      "date": "2004-12",
+      "year": 2004,
+      "month": 12,
+      "temperature": 19.49
+    },
+    {
+      "date": "2005-01",
+      "year": 2005,
+      "month": 1,
+      "temperature": 17.66
+    },
+    {
+      "date": "2005-02",
+      "year": 2005,
+      "month": 2,
+      "temperature": 22.82
+    },
+    {
+      "date": "2005-03",
+      "year": 2005,
+      "month": 3,
+      "temperature": 27.71
+    },
+    {
+      "date": "2005-04",
+      "year": 2005,
+      "month": 4,
+      "temperature": 29.04
+    },
+    {
+      "date": "2005-05",
+      "year": 2005,
+      "month": 5,
+      "temperature": 29.38
+    },
+    {
+      "date": "2005-06",
+      "year": 2005,
+      "month": 6,
+      "temperature": 29.87
+    },
+    {
+      "date": "2005-07",
+      "year": 2005,
+      "month": 7,
+      "temperature": 28.37
+    },
+    {
+      "date": "2005-08",
+      "year": 2005,
+      "month": 8,
+      "temperature": 28.53
+    },
+    {
+      "date": "2005-09",
+      "year": 2005,
+      "month": 9,
+      "temperature": 27.86
+    },
+    {
+      "date": "2005-10",
+      "year": 2005,
+      "month": 10,
+      "temperature": 25.85
+    },
+    {
+      "date": "2005-11",
+      "year": 2005,
+      "month": 11,
+      "temperature": 21.26
+    },
+    {
+      "date": "2005-12",
+      "year": 2005,
+      "month": 12,
+      "temperature": 18.08
+    },
+    {
+      "date": "2006-01",
+      "year": 2006,
+      "month": 1,
+      "temperature": 17.18
+    },
+    {
+      "date": "2006-02",
+      "year": 2006,
+      "month": 2,
+      "temperature": 23.52
+    },
+    {
+      "date": "2006-03",
+      "year": 2006,
+      "month": 3,
+      "temperature": 27.29
+    },
+    {
+      "date": "2006-04",
+      "year": 2006,
+      "month": 4,
+      "temperature": 29.72
+    },
+    {
+      "date": "2006-05",
+      "year": 2006,
+      "month": 5,
+      "temperature": 29.96
+    },
+    {
+      "date": "2006-06",
+      "year": 2006,
+      "month": 6,
+      "temperature": 28.48
+    },
+    {
+      "date": "2006-07",
+      "year": 2006,
+      "month": 7,
+      "temperature": 28.46
+    },
+    {
+      "date": "2006-08",
+      "year": 2006,
+      "month": 8,
+      "temperature": 27.93
+    },
+    {
+      "date": "2006-09",
+      "year": 2006,
+      "month": 9,
+      "temperature": 27.63
+    },
+    {
+      "date": "2006-10",
+      "year": 2006,
+      "month": 10,
+      "temperature": 26.28
+    },
+    {
+      "date": "2006-11",
+      "year": 2006,
+      "month": 11,
+      "temperature": 22.33
+    },
+    {
+      "date": "2006-12",
+      "year": 2006,
+      "month": 12,
+      "temperature": 19.26
+    },
+    {
+      "date": "2007-01",
+      "year": 2007,
+      "month": 1,
+      "temperature": 17.39
+    },
+    {
+      "date": "2007-02",
+      "year": 2007,
+      "month": 2,
+      "temperature": 21.25
+    },
+    {
+      "date": "2007-03",
+      "year": 2007,
+      "month": 3,
+      "temperature": 25.69
+    },
+    {
+      "date": "2007-04",
+      "year": 2007,
+      "month": 4,
+      "temperature": 29.27
+    },
+    {
+      "date": "2007-05",
+      "year": 2007,
+      "month": 5,
+      "temperature": 29.33
+    },
+    {
+      "date": "2007-06",
+      "year": 2007,
+      "month": 6,
+      "temperature": 28.37
+    },
+    {
+      "date": "2007-07",
+      "year": 2007,
+      "month": 7,
+      "temperature": 28.18
+    },
+    {
+      "date": "2007-08",
+      "year": 2007,
+      "month": 8,
+      "temperature": 28.36
+    },
+    {
+      "date": "2007-09",
+      "year": 2007,
+      "month": 9,
+      "temperature": 27.44
+    },
+    {
+      "date": "2007-10",
+      "year": 2007,
+      "month": 10,
+      "temperature": 25.53
+    },
+    {
+      "date": "2007-11",
+      "year": 2007,
+      "month": 11,
+      "temperature": 22.45
+    },
+    {
+      "date": "2007-12",
+      "year": 2007,
+      "month": 12,
+      "temperature": 17.43
+    },
+    {
+      "date": "2008-01",
+      "year": 2008,
+      "month": 1,
+      "temperature": 17.45
+    },
+    {
+      "date": "2008-02",
+      "year": 2008,
+      "month": 2,
+      "temperature": 19.14
+    },
+    {
+      "date": "2008-03",
+      "year": 2008,
+      "month": 3,
+      "temperature": 26.8
+    },
+    {
+      "date": "2008-04",
+      "year": 2008,
+      "month": 4,
+      "temperature": 30.02
+    },
+    {
+      "date": "2008-05",
+      "year": 2008,
+      "month": 5,
+      "temperature": 30.92
+    },
+    {
+      "date": "2008-06",
+      "year": 2008,
+      "month": 6,
+      "temperature": 28.44
+    },
+    {
+      "date": "2008-07",
+      "year": 2008,
+      "month": 7,
+      "temperature": 28.22
+    },
+    {
+      "date": "2008-08",
+      "year": 2008,
+      "month": 8,
+      "temperature": 27.95
+    },
+    {
+      "date": "2008-09",
+      "year": 2008,
+      "month": 9,
+      "temperature": 27.57
+    },
+    {
+      "date": "2008-10",
+      "year": 2008,
+      "month": 10,
+      "temperature": 25.85
+    },
+    {
+      "date": "2008-11",
+      "year": 2008,
+      "month": 11,
+      "temperature": 22.33
+    },
+    {
+      "date": "2008-12",
+      "year": 2008,
+      "month": 12,
+      "temperature": 20.39
+    },
+    {
+      "date": "2009-01",
+      "year": 2009,
+      "month": 1,
+      "temperature": 19.53
+    },
+    {
+      "date": "2009-02",
+      "year": 2009,
+      "month": 2,
+      "temperature": 22.13
+    },
+    {
+      "date": "2009-03",
+      "year": 2009,
+      "month": 3,
+      "temperature": 27.27
+    },
+    {
+      "date": "2009-04",
+      "year": 2009,
+      "month": 4,
+      "temperature": 30.9
+    },
+    {
+      "date": "2009-05",
+      "year": 2009,
+      "month": 5,
+      "temperature": 30.1
+    },
+    {
+      "date": "2009-06",
+      "year": 2009,
+      "month": 6,
+      "temperature": 29.24
+    },
+    {
+      "date": "2009-07",
+      "year": 2009,
+      "month": 7,
+      "temperature": 28.72
+    },
+    {
+      "date": "2009-08",
+      "year": 2009,
+      "month": 8,
+      "temperature": 28.47
+    },
+    {
+      "date": "2009-09",
+      "year": 2009,
+      "month": 9,
+      "temperature": 27.71
+    },
+    {
+      "date": "2009-10",
+      "year": 2009,
+      "month": 10,
+      "temperature": 25.53
+    },
+    {
+      "date": "2009-11",
+      "year": 2009,
+      "month": 11,
+      "temperature": 22.53
+    },
+    {
+      "date": "2009-12",
+      "year": 2009,
+      "month": 12,
+      "temperature": 18.52
+    },
+    {
+      "date": "2010-01",
+      "year": 2010,
+      "month": 1,
+      "temperature": 17.71
+    },
+    {
+      "date": "2010-02",
+      "year": 2010,
+      "month": 2,
+      "temperature": 21.39
+    },
+    {
+      "date": "2010-03",
+      "year": 2010,
+      "month": 3,
+      "temperature": 28.12
+    },
+    {
+      "date": "2010-04",
+      "year": 2010,
+      "month": 4,
+      "temperature": 31.17
+    },
+    {
+      "date": "2010-05",
+      "year": 2010,
+      "month": 5,
+      "temperature": 29.58
+    },
+    {
+      "date": "2010-06",
+      "year": 2010,
+      "month": 6,
+      "temperature": 28.64
+    },
+    {
+      "date": "2010-07",
+      "year": 2010,
+      "month": 7,
+      "temperature": 28.59
+    },
+    {
+      "date": "2010-08",
+      "year": 2010,
+      "month": 8,
+      "temperature": 28.41
+    },
+    {
+      "date": "2010-09",
+      "year": 2010,
+      "month": 9,
+      "temperature": 27.63
+    },
+    {
+      "date": "2010-10",
+      "year": 2010,
+      "month": 10,
+      "temperature": 26.4
+    },
+    {
+      "date": "2010-11",
+      "year": 2010,
+      "month": 11,
+      "temperature": 23.63
+    },
+    {
+      "date": "2010-12",
+      "year": 2010,
+      "month": 12,
+      "temperature": 18.61
+    },
+    {
+      "date": "2011-01",
+      "year": 2011,
+      "month": 1,
+      "temperature": 16.79
+    },
+    {
+      "date": "2011-02",
+      "year": 2011,
+      "month": 2,
+      "temperature": 21.79
+    },
+    {
+      "date": "2011-03",
+      "year": 2011,
+      "month": 3,
+      "temperature": 26.92
+    },
+    {
+      "date": "2011-04",
+      "year": 2011,
+      "month": 4,
+      "temperature": 29.23
+    },
+    {
+      "date": "2011-05",
+      "year": 2011,
+      "month": 5,
+      "temperature": 29.46
+    },
+    {
+      "date": "2011-06",
+      "year": 2011,
+      "month": 6,
+      "temperature": 28.58
+    },
+    {
+      "date": "2011-07",
+      "year": 2011,
+      "month": 7,
+      "temperature": 28.38
+    },
+    {
+      "date": "2011-08",
+      "year": 2011,
+      "month": 8,
+      "temperature": 27.8
+    },
+    {
+      "date": "2011-09",
+      "year": 2011,
+      "month": 9,
+      "temperature": 27.67
+    },
+    {
+      "date": "2011-10",
+      "year": 2011,
+      "month": 10,
+      "temperature": 26.67
+    },
+    {
+      "date": "2011-11",
+      "year": 2011,
+      "month": 11,
+      "temperature": 23.02
+    },
+    {
+      "date": "2011-12",
+      "year": 2011,
+      "month": 12,
+      "temperature": 19.73
+    },
+    {
+      "date": "2012-01",
+      "year": 2012,
+      "month": 1,
+      "temperature": 18.32
+    },
+    {
+      "date": "2012-02",
+      "year": 2012,
+      "month": 2,
+      "temperature": 21.48
+    },
+    {
+      "date": "2012-03",
+      "year": 2012,
+      "month": 3,
+      "temperature": 27.05
+    },
+    {
+      "date": "2012-04",
+      "year": 2012,
+      "month": 4,
+      "temperature": 29.44
+    },
+    {
+      "date": "2012-05",
+      "year": 2012,
+      "month": 5,
+      "temperature": 30.14
+    },
+    {
+      "date": "2012-06",
+      "year": 2012,
+      "month": 6,
+      "temperature": 29.52
+    },
+    {
+      "date": "2012-07",
+      "year": 2012,
+      "month": 7,
+      "temperature": 28.67
+    },
+    {
+      "date": "2012-08",
+      "year": 2012,
+      "month": 8,
+      "temperature": 28.2
+    },
+    {
+      "date": "2012-09",
+      "year": 2012,
+      "month": 9,
+      "temperature": 27.63
+    },
+    {
+      "date": "2012-10",
+      "year": 2012,
+      "month": 10,
+      "temperature": 25.22
+    },
+    {
+      "date": "2012-11",
+      "year": 2012,
+      "month": 11,
+      "temperature": 21.22
+    },
+    {
+      "date": "2012-12",
+      "year": 2012,
+      "month": 12,
+      "temperature": 17.0
+    },
+    {
+      "date": "2013-01",
+      "year": 2013,
+      "month": 1,
+      "temperature": 16.19
+    },
+    {
+      "date": "2013-02",
+      "year": 2013,
+      "month": 2,
+      "temperature": 21.54
+    },
+    {
+      "date": "2013-03",
+      "year": 2013,
+      "month": 3,
+      "temperature": 27.45
+    },
+    {
+      "date": "2013-04",
+      "year": 2013,
+      "month": 4,
+      "temperature": 30.47
+    },
+    {
+      "date": "2013-05",
+      "year": 2013,
+      "month": 5,
+      "temperature": 28.79
+    },
+    {
+      "date": "2013-06",
+      "year": 2013,
+      "month": 6,
+      "temperature": 28.71
+    },
+    {
+      "date": "2013-07",
+      "year": 2013,
+      "month": 7,
+      "temperature": 28.44
+    },
+    {
+      "date": "2013-08",
+      "year": 2013,
+      "month": 8,
+      "temperature": 27.86
+    },
+    {
+      "date": "2013-09",
+      "year": 2013,
+      "month": 9,
+      "temperature": 27.94
+    },
+    {
+      "date": "2013-10",
+      "year": 2013,
+      "month": 10,
+      "temperature": 26.26
+    },
+    {
+      "date": "2013-11",
+      "year": 2013,
+      "month": 11,
+      "temperature": 22.38
+    },
+    {
+      "date": "2013-12",
+      "year": 2013,
+      "month": 12,
+      "temperature": 19.61
+    },
+    {
+      "date": "2014-01",
+      "year": 2014,
+      "month": 1,
+      "temperature": 18.25
+    },
+    {
+      "date": "2014-02",
+      "year": 2014,
+      "month": 2,
+      "temperature": 21.05
+    },
+    {
+      "date": "2014-03",
+      "year": 2014,
+      "month": 3,
+      "temperature": 26.69
+    },
+    {
+      "date": "2014-04",
+      "year": 2014,
+      "month": 4,
+      "temperature": 31.86
+    },
+    {
+      "date": "2014-05",
+      "year": 2014,
+      "month": 5,
+      "temperature": 31.41
+    },
+    {
+      "date": "2014-06",
+      "year": 2014,
+      "month": 6,
+      "temperature": 29.5
+    },
+    {
+      "date": "2014-07",
+      "year": 2014,
+      "month": 7,
+      "temperature": 28.66
+    },
+    {
+      "date": "2014-08",
+      "year": 2014,
+      "month": 8,
+      "temperature": 28.17
+    },
+    {
+      "date": "2014-09",
+      "year": 2014,
+      "month": 9,
+      "temperature": 27.8
+    },
+    {
+      "date": "2014-10",
+      "year": 2014,
+      "month": 10,
+      "temperature": 26.34
+    },
+    {
+      "date": "2014-11",
+      "year": 2014,
+      "month": 11,
+      "temperature": 23.0
+    },
+    {
+      "date": "2014-12",
+      "year": 2014,
+      "month": 12,
+      "temperature": 18.94
+    },
+    {
+      "date": "2015-01",
+      "year": 2015,
+      "month": 1,
+      "temperature": 19.17
+    },
+    {
+      "date": "2015-02",
+      "year": 2015,
+      "month": 2,
+      "temperature": 22.49
+    },
+    {
+      "date": "2015-03",
+      "year": 2015,
+      "month": 3,
+      "temperature": 26.98
+    },
+    {
+      "date": "2015-04",
+      "year": 2015,
+      "month": 4,
+      "temperature": 27.96
+    },
+    {
+      "date": "2015-05",
+      "year": 2015,
+      "month": 5,
+      "temperature": 29.28
+    },
+    {
+      "date": "2015-06",
+      "year": 2015,
+      "month": 6,
+      "temperature": 28.8
+    },
+    {
+      "date": "2015-07",
+      "year": 2015,
+      "month": 7,
+      "temperature": 28.08
+    },
+    {
+      "date": "2015-08",
+      "year": 2015,
+      "month": 8,
+      "temperature": 28.16
+    },
+    {
+      "date": "2015-09",
+      "year": 2015,
+      "month": 9,
+      "temperature": 28.11
+    },
+    {
+      "date": "2015-10",
+      "year": 2015,
+      "month": 10,
+      "temperature": 26.74
+    },
+    {
+      "date": "2015-11",
+      "year": 2015,
+      "month": 11,
+      "temperature": 23.98
+    },
+    {
+      "date": "2015-12",
+      "year": 2015,
+      "month": 12,
+      "temperature": 19.95
+    },
+    {
+      "date": "2016-01",
+      "year": 2016,
+      "month": 1,
+      "temperature": 18.9
+    },
+    {
+      "date": "2016-02",
+      "year": 2016,
+      "month": 2,
+      "temperature": 24.01
+    },
+    {
+      "date": "2016-03",
+      "year": 2016,
+      "month": 3,
+      "temperature": 28.14
+    },
+    {
+      "date": "2016-04",
+      "year": 2016,
+      "month": 4,
+      "temperature": 30.33
+    },
+    {
+      "date": "2016-05",
+      "year": 2016,
+      "month": 5,
+      "temperature": 29.37
+    },
+    {
+      "date": "2016-06",
+      "year": 2016,
+      "month": 6,
+      "temperature": 28.8
+    },
+    {
+      "date": "2016-07",
+      "year": 2016,
+      "month": 7,
+      "temperature": 28.23
+    },
+    {
+      "date": "2016-08",
+      "year": 2016,
+      "month": 8,
+      "temperature": 28.35
+    },
+    {
+      "date": "2016-09",
+      "year": 2016,
+      "month": 9,
+      "temperature": 27.98
+    },
+    {
+      "date": "2016-10",
+      "year": 2016,
+      "month": 10,
+      "temperature": 26.85
+    },
+    {
+      "date": "2016-11",
+      "year": 2016,
+      "month": 11,
+      "temperature": 22.94
+    },
+    {
+      "date": "2016-12",
+      "year": 2016,
+      "month": 12,
+      "temperature": 20.01
+    },
+    {
+      "date": "2017-01",
+      "year": 2017,
+      "month": 1,
+      "temperature": 18.29
+    },
+    {
+      "date": "2017-02",
+      "year": 2017,
+      "month": 2,
+      "temperature": 22.52
+    },
+    {
+      "date": "2017-03",
+      "year": 2017,
+      "month": 3,
+      "temperature": 24.97
+    },
+    {
+      "date": "2017-04",
+      "year": 2017,
+      "month": 4,
+      "temperature": 27.35
+    },
+    {
+      "date": "2017-05",
+      "year": 2017,
+      "month": 5,
+      "temperature": 28.49
+    },
+    {
+      "date": "2017-06",
+      "year": 2017,
+      "month": 6,
+      "temperature": 28.33
+    },
+    {
+      "date": "2017-07",
+      "year": 2017,
+      "month": 7,
+      "temperature": 28.14
+    },
+    {
+      "date": "2017-08",
+      "year": 2017,
+      "month": 8,
+      "temperature": 28.3
+    },
+    {
+      "date": "2017-09",
+      "year": 2017,
+      "month": 9,
+      "temperature": 28.12
+    },
+    {
+      "date": "2017-10",
+      "year": 2017,
+      "month": 10,
+      "temperature": 26.44
+    },
+    {
+      "date": "2017-11",
+      "year": 2017,
+      "month": 11,
+      "temperature": 22.29
+    },
+    {
+      "date": "2017-12",
+      "year": 2017,
+      "month": 12,
+      "temperature": 20.05
+    },
+    {
+      "date": "2018-01",
+      "year": 2018,
+      "month": 1,
+      "temperature": 15.39
+    },
+    {
+      "date": "2018-02",
+      "year": 2018,
+      "month": 2,
+      "temperature": 21.33
+    },
+    {
+      "date": "2018-03",
+      "year": 2018,
+      "month": 3,
+      "temperature": 26.54
+    },
+    {
+      "date": "2018-04",
+      "year": 2018,
+      "month": 4,
+      "temperature": 27.45
+    },
+    {
+      "date": "2018-05",
+      "year": 2018,
+      "month": 5,
+      "temperature": 27.66
+    },
+    {
+      "date": "2018-06",
+      "year": 2018,
+      "month": 6,
+      "temperature": 28.42
+    },
+    {
+      "date": "2018-07",
+      "year": 2018,
+      "month": 7,
+      "temperature": 28.63
+    },
+    {
+      "date": "2018-08",
+      "year": 2018,
+      "month": 8,
+      "temperature": 28.45
+    },
+    {
+      "date": "2018-09",
+      "year": 2018,
+      "month": 9,
+      "temperature": 28.23
+    },
+    {
+      "date": "2018-10",
+      "year": 2018,
+      "month": 10,
+      "temperature": 25.66
+    },
+    {
+      "date": "2018-11",
+      "year": 2018,
+      "month": 11,
+      "temperature": 22.89
+    },
+    {
+      "date": "2018-12",
+      "year": 2018,
+      "month": 12,
+      "temperature": 18.95
+    },
+    {
+      "date": "2019-01",
+      "year": 2019,
+      "month": 1,
+      "temperature": 18.98
+    },
+    {
+      "date": "2019-02",
+      "year": 2019,
+      "month": 2,
+      "temperature": 21.89
+    },
+    {
+      "date": "2019-03",
+      "year": 2019,
+      "month": 3,
+      "temperature": 25.61
+    },
+    {
+      "date": "2019-04",
+      "year": 2019,
+      "month": 4,
+      "temperature": 29.44
+    },
+    {
+      "date": "2019-05",
+      "year": 2019,
+      "month": 5,
+      "temperature": 29.92
+    },
+    {
+      "date": "2019-06",
+      "year": 2019,
+      "month": 6,
+      "temperature": 28.94
+    },
+    {
+      "date": "2019-07",
+      "year": 2019,
+      "month": 7,
+      "temperature": 28.52
+    },
+    {
+      "date": "2019-08",
+      "year": 2019,
+      "month": 8,
+      "temperature": 28.57
+    },
+    {
+      "date": "2019-09",
+      "year": 2019,
+      "month": 9,
+      "temperature": 28.03
+    },
+    {
+      "date": "2019-10",
+      "year": 2019,
+      "month": 10,
+      "temperature": 25.93
+    },
+    {
+      "date": "2019-11",
+      "year": 2019,
+      "month": 11,
+      "temperature": 23.47
+    },
+    {
+      "date": "2019-12",
+      "year": 2019,
+      "month": 12,
+      "temperature": 17.85
+    },
+    {
+      "date": "2020-01",
+      "year": 2020,
+      "month": 1,
+      "temperature": 16.82
+    },
+    {
+      "date": "2020-02",
+      "year": 2020,
+      "month": 2,
+      "temperature": 19.41
+    },
+    {
+      "date": "2020-03",
+      "year": 2020,
+      "month": 3,
+      "temperature": 25.54
+    },
+    {
+      "date": "2020-04",
+      "year": 2020,
+      "month": 4,
+      "temperature": 28.19
+    },
+    {
+      "date": "2020-05",
+      "year": 2020,
+      "month": 5,
+      "temperature": 28.42
+    },
+    {
+      "date": "2020-06",
+      "year": 2020,
+      "month": 6,
+      "temperature": 28.38
+    },
+    {
+      "date": "2020-07",
+      "year": 2020,
+      "month": 7,
+      "temperature": 28.61
+    },
+    {
+      "date": "2020-08",
+      "year": 2020,
+      "month": 8,
+      "temperature": 28.44
+    },
+    {
+      "date": "2020-09",
+      "year": 2020,
+      "month": 9,
+      "temperature": 28.45
+    },
+    {
+      "date": "2020-10",
+      "year": 2020,
+      "month": 10,
+      "temperature": 27.75
+    },
+    {
+      "date": "2020-11",
+      "year": 2020,
+      "month": 11,
+      "temperature": 22.75
+    },
+    {
+      "date": "2020-12",
+      "year": 2020,
+      "month": 12,
+      "temperature": 18.17
+    },
+    {
+      "date": "2021-01",
+      "year": 2021,
+      "month": 1,
+      "temperature": 17.57
+    },
+    {
+      "date": "2021-02",
+      "year": 2021,
+      "month": 2,
+      "temperature": 20.92
+    },
+    {
+      "date": "2021-03",
+      "year": 2021,
+      "month": 3,
+      "temperature": 27.91
+    },
+    {
+      "date": "2021-04",
+      "year": 2021,
+      "month": 4,
+      "temperature": 30.68
+    },
+    {
+      "date": "2021-05",
+      "year": 2021,
+      "month": 5,
+      "temperature": 29.46
+    },
+    {
+      "date": "2021-06",
+      "year": 2021,
+      "month": 6,
+      "temperature": 28.25
+    },
+    {
+      "date": "2021-07",
+      "year": 2021,
+      "month": 7,
+      "temperature": 28.55
+    },
+    {
+      "date": "2021-08",
+      "year": 2021,
+      "month": 8,
+      "temperature": 28.34
+    },
+    {
+      "date": "2021-09",
+      "year": 2021,
+      "month": 9,
+      "temperature": 27.83
+    },
+    {
+      "date": "2021-10",
+      "year": 2021,
+      "month": 10,
+      "temperature": 26.82
+    },
+    {
+      "date": "2021-11",
+      "year": 2021,
+      "month": 11,
+      "temperature": 21.49
+    },
+    {
+      "date": "2021-12",
+      "year": 2021,
+      "month": 12,
+      "temperature": 18.65
+    },
+    {
+      "date": "2022-01",
+      "year": 2022,
+      "month": 1,
+      "temperature": 17.56
+    },
+    {
+      "date": "2022-02",
+      "year": 2022,
+      "month": 2,
+      "temperature": 18.99
+    },
+    {
+      "date": "2022-03",
+      "year": 2022,
+      "month": 3,
+      "temperature": 26.57
+    },
+    {
+      "date": "2022-04",
+      "year": 2022,
+      "month": 4,
+      "temperature": 30.54
+    },
+    {
+      "date": "2022-05",
+      "year": 2022,
+      "month": 5,
+      "temperature": 29.01
+    },
+    {
+      "date": "2022-06",
+      "year": 2022,
+      "month": 6,
+      "temperature": 27.99
+    },
+    {
+      "date": "2022-07",
+      "year": 2022,
+      "month": 7,
+      "temperature": 28.4
+    },
+    {
+      "date": "2022-08",
+      "year": 2022,
+      "month": 8,
+      "temperature": 28.57
+    },
+    {
+      "date": "2022-09",
+      "year": 2022,
+      "month": 9,
+      "temperature": 28.01
+    },
+    {
+      "date": "2022-10",
+      "year": 2022,
+      "month": 10,
+      "temperature": 26.27
+    },
+    {
+      "date": "2022-11",
+      "year": 2022,
+      "month": 11,
+      "temperature": 22.58
+    },
+    {
+      "date": "2022-12",
+      "year": 2022,
+      "month": 12,
+      "temperature": 19.34
+    },
+    {
+      "date": "2023-01",
+      "year": 2023,
+      "month": 1,
+      "temperature": 17.99
+    },
+    {
+      "date": "2023-02",
+      "year": 2023,
+      "month": 2,
+      "temperature": 22.13
+    },
+    {
+      "date": "2023-03",
+      "year": 2023,
+      "month": 3,
+      "temperature": 26.19
+    },
+    {
+      "date": "2023-04",
+      "year": 2023,
+      "month": 4,
+      "temperature": 29.33
+    },
+    {
+      "date": "2023-05",
+      "year": 2023,
+      "month": 5,
+      "temperature": 29.52
+    },
+    {
+      "date": "2023-06",
+      "year": 2023,
+      "month": 6,
+      "temperature": 29.12
+    },
+    {
+      "date": "2023-07",
+      "year": 2023,
+      "month": 7,
+      "temperature": 29.02
+    },
+    {
+      "date": "2023-08",
+      "year": 2023,
+      "month": 8,
+      "temperature": 28.64
+    },
+    {
+      "date": "2023-09",
+      "year": 2023,
+      "month": 9,
+      "temperature": 28.53
+    },
+    {
+      "date": "2023-10",
+      "year": 2023,
+      "month": 10,
+      "temperature": 26.55
+    },
+    {
+      "date": "2023-11",
+      "year": 2023,
+      "month": 11,
+      "temperature": 23.05
+    },
+    {
+      "date": "2023-12",
+      "year": 2023,
+      "month": 12,
+      "temperature": 19.69
+    },
+    {
+      "date": "2024-01",
+      "year": 2024,
+      "month": 1,
+      "temperature": 16.31
+    },
+    {
+      "date": "2024-02",
+      "year": 2024,
+      "month": 2,
+      "temperature": 20.75
+    },
+    {
+      "date": "2024-03",
+      "year": 2024,
+      "month": 3,
+      "temperature": 25.35
+    },
+    {
+      "date": "2024-04",
+      "year": 2024,
+      "month": 4,
+      "temperature": 30.83
+    },
+    {
+      "date": "2024-05",
+      "year": 2024,
+      "month": 5,
+      "temperature": 29.92
+    },
+    {
+      "date": "2024-06",
+      "year": 2024,
+      "month": 6,
+      "temperature": 29.17
+    },
+    {
+      "date": "2024-07",
+      "year": 2024,
+      "month": 7,
+      "temperature": 29.01
+    },
+    {
+      "date": "2024-08",
+      "year": 2024,
+      "month": 8,
+      "temperature": 28.0
+    },
+    {
+      "date": "2024-09",
+      "year": 2024,
+      "month": 9,
+      "temperature": 28.46
+    },
+    {
+      "date": "2024-10",
+      "year": 2024,
+      "month": 10,
+      "temperature": 27.11
+    },
+    {
+      "date": "2024-11",
+      "year": 2024,
+      "month": 11,
+      "temperature": 22.47
+    },
+    {
+      "date": "2024-12",
+      "year": 2024,
+      "month": 12,
+      "temperature": 17.87
+    }
+  ],
+  "periods": {
+    "1981-2024": {
+      "start": 1981,
+      "end": 2024,
+      "n": 44,
+      "slopePerDecade": -0.23855560324171998,
+      "ci95": [
+        -0.3413182430590606,
+        -0.13579296342437935
+      ],
+      "pValue": 2.9419677696516442e-05,
+      "significant": true,
+      "mean": 25.827956977272724,
+      "fittedChange": -1.0257890939393959,
+      "residualLag1": 0.46242141588490054,
+      "rows": [
+        {
+          "year": 1981,
+          "temperature": 25.729096,
+          "trend": 26.340851524242428,
+          "band": [
+            26.033697226488197,
+            26.64800582199666
+          ]
+        },
+        {
+          "year": 1982,
+          "temperature": 25.855507,
+          "trend": 26.316995963918256,
+          "band": [
+            26.018882933671353,
+            26.61510899416516
+          ]
+        },
+        {
+          "year": 1983,
+          "temperature": 26.350712,
+          "trend": 26.293140403594084,
+          "band": [
+            26.00398612266445,
+            26.582294684523717
+          ]
+        },
+        {
+          "year": 1984,
+          "temperature": 25.776175,
+          "trend": 26.26928484326991,
+          "band": [
+            25.988998880796366,
+            26.549570805743457
+          ]
+        },
+        {
+          "year": 1985,
+          "temperature": 26.417507,
+          "trend": 26.24542928294574,
+          "band": [
+            25.973912346931883,
+            26.516946218959596
+          ]
+        },
+        {
+          "year": 1986,
+          "temperature": 26.159753,
+          "trend": 26.221573722621567,
+          "band": [
+            25.958716583612887,
+            26.484430861630248
+          ]
+        },
+        {
+          "year": 1987,
+          "temperature": 26.399205,
+          "trend": 26.197718162297395,
+          "band": [
+            25.943400432447216,
+            26.452035892147574
+          ]
+        },
+        {
+          "year": 1988,
+          "temperature": 26.538743,
+          "trend": 26.173862601973223,
+          "band": [
+            25.927951351504046,
+            26.4197738524424
+          ]
+        },
+        {
+          "year": 1989,
+          "temperature": 26.461507,
+          "trend": 26.150007041649054,
+          "band": [
+            25.912355233952745,
+            26.387658849345364
+          ]
+        },
+        {
+          "year": 1990,
+          "temperature": 26.512438,
+          "trend": 26.126151481324882,
+          "band": [
+            25.896596208028495,
+            26.35570675462127
+          ]
+        },
+        {
+          "year": 1991,
+          "temperature": 26.529863,
+          "trend": 26.10229592100071,
+          "band": [
+            25.88065641978787,
+            26.32393542221355
+          ]
+        },
+        {
+          "year": 1992,
+          "temperature": 26.753443,
+          "trend": 26.078440360676538,
+          "band": [
+            25.864515802244316,
+            26.29236491910876
+          ]
+        },
+        {
+          "year": 1993,
+          "temperature": 26.259726,
+          "trend": 26.054584800352366,
+          "band": [
+            25.848151837611894,
+            26.261017763092838
+          ]
+        },
+        {
+          "year": 1994,
+          "temperature": 26.899589,
+          "trend": 26.030729240028194,
+          "band": [
+            25.831539323832516,
+            26.229919156223872
+          ]
+        },
+        {
+          "year": 1995,
+          "temperature": 26.51011,
+          "trend": 26.00687367970402,
+          "band": [
+            25.814650162607077,
+            26.199097196800967
+          ]
+        },
+        {
+          "year": 1996,
+          "temperature": 26.636612,
+          "trend": 25.98301811937985,
+          "band": [
+            25.797453193978953,
+            26.168583044780746
+          ]
+        },
+        {
+          "year": 1997,
+          "temperature": 25.658219,
+          "trend": 25.959162559055677,
+          "band": [
+            25.77991411204481,
+            26.138411006066544
+          ]
+        },
+        {
+          "year": 1998,
+          "temperature": 25.544438,
+          "trend": 25.935306998731505,
+          "band": [
+            25.761995506973406,
+            26.108618490489604
+          ]
+        },
+        {
+          "year": 1999,
+          "temperature": 26.003781,
+          "trend": 25.911451438407333,
+          "band": [
+            25.743657088687584,
+            26.079245788127082
+          ]
+        },
+        {
+          "year": 2000,
+          "temperature": 25.110902,
+          "trend": 25.88759587808316,
+          "band": [
+            25.724856154526883,
+            26.05033560163944
+          ]
+        },
+        {
+          "year": 2001,
+          "temperature": 25.300767,
+          "trend": 25.86374031775899,
+          "band": [
+            25.70554836268125,
+            26.02193227283673
+          ]
+        },
+        {
+          "year": 2002,
+          "temperature": 25.485644,
+          "trend": 25.839884757434817,
+          "band": [
+            25.68568885968683,
+            25.994080655182803
+          ]
+        },
+        {
+          "year": 2003,
+          "temperature": 25.290986,
+          "trend": 25.816029197110645,
+          "band": [
+            25.665233778360136,
+            25.966824615861153
+          ]
+        },
+        {
+          "year": 2004,
+          "temperature": 25.365574,
+          "trend": 25.792173636786472,
+          "band": [
+            25.64414206936648,
+            25.940205204206464
+          ]
+        },
+        {
+          "year": 2005,
+          "temperature": 25.542027,
+          "trend": 25.7683180764623,
+          "band": [
+            25.62237755846835,
+            25.91425859445625
+          ]
+        },
+        {
+          "year": 2006,
+          "temperature": 25.672658,
+          "trend": 25.744462516138128,
+          "band": [
+            25.599911044908293,
+            25.889013987367964
+          ]
+        },
+        {
+          "year": 2007,
+          "temperature": 25.068795,
+          "trend": 25.720606955813956,
+          "band": [
+            25.576722196093122,
+            25.86449171553479
+          ]
+        },
+        {
+          "year": 2008,
+          "temperature": 25.439454,
+          "trend": 25.696751395489784,
+          "band": [
+            25.552800975108394,
+            25.840701815871174
+          ]
+        },
+        {
+          "year": 2009,
+          "temperature": 25.899671,
+          "trend": 25.672895835165612,
+          "band": [
+            25.528148378611515,
+            25.81764329171971
+          ]
+        },
+        {
+          "year": 2010,
+          "temperature": 25.838466,
+          "trend": 25.64904027484144,
+          "band": [
+            25.5027763625711,
+            25.79530418711178
+          ]
+        },
+        {
+          "year": 2011,
+          "temperature": 25.516082,
+          "trend": 25.625184714517268,
+          "band": [
+            25.47670696840959,
+            25.773662460624944
+          ]
+        },
+        {
+          "year": 2012,
+          "temperature": 25.327377,
+          "trend": 25.601329154193095,
+          "band": [
+            25.449970793510076,
+            25.752687514876115
+          ]
+        },
+        {
+          "year": 2013,
+          "temperature": 25.481425,
+          "trend": 25.577473593868923,
+          "band": [
+            25.422605040537622,
+            25.732342147200225
+          ]
+        },
+        {
+          "year": 2014,
+          "temperature": 25.990301,
+          "trend": 25.55361803354475,
+          "band": [
+            25.39465140976462,
+            25.712584657324882
+          ]
+        },
+        {
+          "year": 2015,
+          "temperature": 25.820219,
+          "trend": 25.52976247322058,
+          "band": [
+            25.366154070795695,
+            25.693370875645464
+          ]
+        },
+        {
+          "year": 2016,
+          "temperature": 26.15612,
+          "trend": 25.505906912896407,
+          "band": [
+            25.337157885003396,
+            25.674655940789417
+          ]
+        },
+        {
+          "year": 2017,
+          "temperature": 25.283123,
+          "trend": 25.48205135257224,
+          "band": [
+            25.307706972999814,
+            25.656395732144663
+          ]
+        },
+        {
+          "year": 2018,
+          "temperature": 24.977041,
+          "trend": 25.458195792248066,
+          "band": [
+            25.277843652906732,
+            25.6385479315894
+          ]
+        },
+        {
+          "year": 2019,
+          "temperature": 25.605753,
+          "trend": 25.434340231923894,
+          "band": [
+            25.247607725797234,
+            25.621072738050554
+          ]
+        },
+        {
+          "year": 2020,
+          "temperature": 25.088087,
+          "trend": 25.410484671599722,
+          "band": [
+            25.217036056390064,
+            25.60393328680938
+          ]
+        },
+        {
+          "year": 2021,
+          "temperature": 25.560438,
+          "trend": 25.38662911127555,
+          "band": [
+            25.186162386327066,
+            25.587095836224034
+          ]
+        },
+        {
+          "year": 2022,
+          "temperature": 25.349699,
+          "trend": 25.362773550951378,
+          "band": [
+            25.15501731855521,
+            25.570529783347546
+          ]
+        },
+        {
+          "year": 2023,
+          "temperature": 25.825041,
+          "trend": 25.338917990627206,
+          "band": [
+            25.12362841914225,
+            25.55420756211216
+          ]
+        },
+        {
+          "year": 2024,
+          "temperature": 25.438033,
+          "trend": 25.315062430303033,
+          "band": [
+            25.09202039327022,
+            25.538104467335845
+          ]
+        }
+      ],
+      "method": "Annual OLS; Newey-West HAC lag 1; Bartlett weights; n/(n-2) correction; approximate t(n-2) inference"
+    },
+    "2001-2024": {
+      "start": 2001,
+      "end": 2024,
+      "n": 24,
+      "slopePerDecade": 0.034339847826084624,
+      "ci95": [
+        -0.09901751792118996,
+        0.16769721357335923
+      ],
+      "pValue": 0.5986779216693164,
+      "significant": false,
+      "mean": 25.51344920833333,
+      "fittedChange": 0.07898164999999464,
+      "residualLag1": 0.1067198854068767,
+      "rows": [
+        {
+          "year": 2001,
+          "temperature": 25.300767,
+          "trend": 25.473958383333336,
+          "band": [
+            25.302823662413864,
+            25.64509310425281
+          ]
+        },
+        {
+          "year": 2002,
+          "temperature": 25.485644,
+          "trend": 25.477392368115947,
+          "band": [
+            25.31474056985442,
+            25.640044166377475
+          ]
+        },
+        {
+          "year": 2003,
+          "temperature": 25.290986,
+          "trend": 25.480826352898553,
+          "band": [
+            25.32597220864916,
+            25.63568049714795
+          ]
+        },
+        {
+          "year": 2004,
+          "temperature": 25.365574,
+          "trend": 25.484260337681164,
+          "band": [
+            25.336410115345526,
+            25.6321105600168
+          ]
+        },
+        {
+          "year": 2005,
+          "temperature": 25.542027,
+          "trend": 25.48769432246377,
+          "band": [
+            25.345936591675766,
+            25.629452053251775
+          ]
+        },
+        {
+          "year": 2006,
+          "temperature": 25.672658,
+          "trend": 25.491128307246377,
+          "band": [
+            25.354429719208273,
+            25.627826895284482
+          ]
+        },
+        {
+          "year": 2007,
+          "temperature": 25.068795,
+          "trend": 25.494562292028988,
+          "band": [
+            25.361771338101246,
+            25.62735324595673
+          ]
+        },
+        {
+          "year": 2008,
+          "temperature": 25.439454,
+          "trend": 25.497996276811595,
+          "band": [
+            25.367857678930534,
+            25.628134874692655
+          ]
+        },
+        {
+          "year": 2009,
+          "temperature": 25.899671,
+          "trend": 25.501430261594205,
+          "band": [
+            25.372611180663473,
+            25.630249342524937
+          ]
+        },
+        {
+          "year": 2010,
+          "temperature": 25.838466,
+          "trend": 25.504864246376812,
+          "band": [
+            25.37599089651265,
+            25.633737596240973
+          ]
+        },
+        {
+          "year": 2011,
+          "temperature": 25.516082,
+          "trend": 25.508298231159422,
+          "band": [
+            25.37799854298419,
+            25.638597919334654
+          ]
+        },
+        {
+          "year": 2012,
+          "temperature": 25.327377,
+          "trend": 25.51173221594203,
+          "band": [
+            25.37867823850469,
+            25.644786193379367
+          ]
+        },
+        {
+          "year": 2013,
+          "temperature": 25.481425,
+          "trend": 25.51516620072464,
+          "band": [
+            25.378110019451373,
+            25.652222381997905
+          ]
+        },
+        {
+          "year": 2014,
+          "temperature": 25.990301,
+          "trend": 25.518600185507246,
+          "band": [
+            25.376399213363925,
+            25.660801157650567
+          ]
+        },
+        {
+          "year": 2015,
+          "temperature": 25.820219,
+          "trend": 25.522034170289857,
+          "band": [
+            25.373664632069296,
+            25.670403708510417
+          ]
+        },
+        {
+          "year": 2016,
+          "temperature": 26.15612,
+          "trend": 25.525468155072463,
+          "band": [
+            25.37002811195281,
+            25.680908198192117
+          ]
+        },
+        {
+          "year": 2017,
+          "temperature": 25.283123,
+          "trend": 25.528902139855074,
+          "band": [
+            25.365606769809627,
+            25.69219750990052
+          ]
+        },
+        {
+          "year": 2018,
+          "temperature": 24.977041,
+          "trend": 25.53233612463768,
+          "band": [
+            25.36050820929358,
+            25.70416403998178
+          ]
+        },
+        {
+          "year": 2019,
+          "temperature": 25.605753,
+          "trend": 25.53577010942029,
+          "band": [
+            25.354828210334702,
+            25.71671200850588
+          ]
+        },
+        {
+          "year": 2020,
+          "temperature": 25.088087,
+          "trend": 25.539204094202898,
+          "band": [
+            25.34865018335906,
+            25.729758005046737
+          ]
+        },
+        {
+          "year": 2021,
+          "temperature": 25.560438,
+          "trend": 25.542638078985505,
+          "band": [
+            25.34204570931247,
+            25.74323044865854
+          ]
+        },
+        {
+          "year": 2022,
+          "temperature": 25.349699,
+          "trend": 25.546072063768115,
+          "band": [
+            25.3350756459213,
+            25.75706848161493
+          ]
+        },
+        {
+          "year": 2023,
+          "temperature": 25.825041,
+          "trend": 25.54950604855072,
+          "band": [
+            25.32779145350269,
+            25.771220643598753
+          ]
+        },
+        {
+          "year": 2024,
+          "temperature": 25.438033,
+          "trend": 25.552940033333332,
+          "band": [
+            25.320236533766998,
+            25.785643532899666
+          ]
+        }
+      ],
+      "method": "Annual OLS; Newey-West HAC lag 1; Bartlett weights; n/(n-2) correction; approximate t(n-2) inference"
+    },
+    "2015-2024": {
+      "start": 2015,
+      "end": 2024,
+      "n": 10,
+      "slopePerDecade": -0.2540498181818016,
+      "ci95": [
+        -1.1782576203760877,
+        0.6701579840124844
+      ],
+      "pValue": 0.5438511416849227,
+      "significant": false,
+      "mean": 25.5103554,
+      "fittedChange": -0.22864483636362146,
+      "residualLag1": -0.032791128056070554,
+      "rows": [
+        {
+          "year": 2015,
+          "temperature": 25.820219,
+          "trend": 25.624677818181805,
+          "band": [
+            25.023823895894164,
+            26.225531740469446
+          ]
+        },
+        {
+          "year": 2016,
+          "temperature": 26.15612,
+          "trend": 25.599272836363625,
+          "band": [
+            25.082680151422444,
+            26.115865521304805
+          ]
+        },
+        {
+          "year": 2017,
+          "temperature": 25.283123,
+          "trend": 25.573867854545444,
+          "band": [
+            25.138214586941753,
+            26.009521122149135
+          ]
+        },
+        {
+          "year": 2018,
+          "temperature": 24.977041,
+          "trend": 25.548462872727264,
+          "band": [
+            25.188181401866576,
+            25.90874434358795
+          ]
+        },
+        {
+          "year": 2019,
+          "temperature": 25.605753,
+          "trend": 25.523057890909083,
+          "band": [
+            25.228278468034883,
+            25.817837313783283
+          ]
+        },
+        {
+          "year": 2020,
+          "temperature": 25.088087,
+          "trend": 25.497652909090906,
+          "band": [
+            25.250528893084187,
+            25.744776925097625
+          ]
+        },
+        {
+          "year": 2021,
+          "temperature": 25.560438,
+          "trend": 25.472247927272726,
+          "band": [
+            25.24349292370501,
+            25.701002930840442
+          ]
+        },
+        {
+          "year": 2022,
+          "temperature": 25.349699,
+          "trend": 25.446842945454545,
+          "band": [
+            25.200528866969417,
+            25.693157023939673
+          ]
+        },
+        {
+          "year": 2023,
+          "temperature": 25.825041,
+          "trend": 25.421437963636365,
+          "band": [
+            25.12801744612706,
+            25.71485848114567
+          ]
+        },
+        {
+          "year": 2024,
+          "temperature": 25.438033,
+          "trend": 25.396032981818184,
+          "band": [
+            25.037419295292402,
+            25.754646668343966
+          ]
+        }
+      ],
+      "method": "Annual OLS; Newey-West HAC lag 1; Bartlett weights; n/(n-2) correction; approximate t(n-2) inference"
+    }
+  },
+  "limitations": [
+    "Regional model grid estimate at Dhaka's coordinates; not a station or city-boundary average.",
+    "Air temperature at 2 meters, not land surface temperature or a direct satellite measurement.",
+    "Uncertainty describes the fitted trend, not all measurement or model uncertainty.",
+    "HAC lag 1 only addresses short-lag dependence; results are exploratory and sensitive to period and assumptions.",
+    "A nonsignificant result does not establish no change. Trends do not identify causes or predict the future."
+  ]
+}
