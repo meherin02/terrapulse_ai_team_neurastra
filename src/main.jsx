@@ -124,10 +124,10 @@ function ExplorerIntro({ onExport }) {
 }
 
 const teamMembers = [
-  { name: 'Meherin Jahan', email: 'meherjan0201@gmail.com', role: 'Frontend and backend developer', initials: 'MJ' },
-  { name: 'Meherun Nessa Shanta', email: 'meherakteronline@gmail.com', role: 'UI/UX', initials: 'MS' },
-  { name: 'Sabekun Nahar Mim', email: 'sabekunnaharmim6347@gmail.com', role: 'AI expert and video editor', initials: 'SM' },
-  { name: 'Sanjida Ahmed', email: 'sanjida.saba4343@gmail.com', role: 'App tester', initials: 'SA' }
+  { name: 'Meherin Jahan', email: 'meherjan0201@gmail.com', role: 'Full-stack Developer, Integration Lead, Video editor and Voice artist', initials: 'MJ' },
+  { name: 'Meherun Nessa Shanta', email: 'meherakteronline@gmail.com', role: 'UI/UX Designer', initials: 'MS' },
+  { name: 'Sabekun Nahar Mim', email: 'sabekunnaharmim6347@gmail.com', role: 'AI Integration & Science Communication', initials: 'SM' },
+  { name: 'Sanjida Ahmed', email: 'sanjida.saba4343@gmail.com', role: 'QA & Data Validation', initials: 'SA' }
 ];
 
 function TeamIntroduction() {
